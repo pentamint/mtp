@@ -1,3 +1,38 @@
+/* ----------------------------------------------------------
+ * 신규 코드
+ * ---------------------------------------------------------- */
+/* Social Icons */
+#footer .fusion-icon-youtube {
+  background-image: url(/wp-content/uploads/2018/08/YouTube-icon.png)
+}
+/* Fix Stay Logged In Button */
+.um-field-checkbox input, .um-field-radio input {
+  opacity: 1 !important;
+  width: 1em !important;
+  margin-left: 1em;
+  margin-top: .5em;
+}
+/* Fix Home Slogan Spacing */
+.fusion-modal h1, .fusion-widget-area h1, .post-content h1 {
+  font-size: 0;
+  margin: 1rem 0 3rem 0;
+}
+/* Fix Breadcrumb Right Spacing */
+#breadcrumbs, #breadcrumbs a {
+  Padding-right: 1rem;
+}
+/* Fix Searchbar Design */
+.searchform .fusion-search-form-content .fusion-search-button input[type=submit] {
+  border: 1px solid #3e4346;
+  border-left: 0;
+}
+/* Fix Category Breadcrumb Top Spacing */
+.category #breadcrumbs {
+  margin-top: 0;
+}
+/* ----------------------------------------------------------
+ * 기존 코드
+ * ---------------------------------------------------------- */
 /* ----- Custom Code ----- */
 /* 페이지 상단 베너 */
 .page-id-886 .fusion-header-v1 { /* 공지사항 */
@@ -22,6 +57,9 @@
   background-position: top;
   background-repeat: no-repeat;
   margin: 0 auto;
+}
+.single-post .fusion-header-v1 {
+  height: unset; /* fix overlapping #main element */
 }
 .search-results .fusion-header-v1 {
   height: 100px;
@@ -239,9 +277,6 @@ body {
   margin: 0;
   padding: 2rem;
   color: #fff;
-}
-.single-post #main {
-  padding-top: 112px;
 }
 .home .fusion-header-wrapper {
   position: relative;
@@ -753,6 +788,9 @@ span.arrowClick-right{
   #main-text-wrap .left,
   #main-text-wrap .right{
     width: 330px;
+  }
+  .single-post #main {
+    padding-top: 112px;
   }
 }
 @media (max-width: 1100px) {
