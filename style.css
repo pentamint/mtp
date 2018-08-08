@@ -931,6 +931,16 @@ span.arrowClick-right{
     border-radius: 0 20px 20px 0;
     background-color: rgba(35,38,40,0.5);
   }
+  /* remove search icon from home */
+  .home a.fusion-icon.fusion-icon-search {
+    display: none;
+  }
+  :not(.home) .fusion-mobile-menu-search {
+    margin-top: 25px; /* fix top margin */
+  }
+  :not(.home) .fusion-mobile-menu-search .fusion-search-form-content .fusion-search-field {
+    background-color: #000; /* darken searchbar background */
+  }
   /* 서치바 끝 */
   /* 1100px이하 검색결과 페이지 디자인 수정 */
   .search-results .fusion-post-content-wrapper {
@@ -1133,9 +1143,13 @@ span.arrowClick-right{
   .page-id-6826 .searchform .fusion-search-form-content .fusion-search-field input {
     height: 35px;
   }
-  .searchform .fusion-search-form-content .fusion-search-button input[type="submit"] {
+  .page-id-6826 .astm-search-menu .searchform .search-button input[type="submit"], .page-id-6826 .searchform .fusion-search-form-content .fusion-search-button input[type="submit"] {  /* fix home search field height */
     height: 35px;
     line-height: 35px;
+  }
+  .searchform .fusion-search-form-content .fusion-search-button input[type="submit"] { /* fix inner pages search field height */
+    height: 45px;
+    line-height: 45px;
   }
   #pm-main .down-btn p::before, #pm-main .down-btn p::after {
     width: 20px;
