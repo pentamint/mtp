@@ -3,7 +3,7 @@
  * ---------------------------------------------------------- */
 /* Social Icons */
 #footer .fusion-icon-youtube {
-  background-image: url(/wp-content/uploads/2018/08/YouTube-icon.png)
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/08/08141210/YouTube-icon.png)
 }
 /* Fix Stay Logged In Button */
 .um-field-checkbox input, .um-field-radio input {
@@ -36,19 +36,25 @@
 /* ----- Custom Code ----- */
 /* 페이지 상단 베너 */
 .page-id-886 .fusion-header-v1 { /* 공지사항 */
-  background: url(/wp-content/uploads/2018/07/공지사항.jpg);
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/07/08141325/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD.jpg);
 }
 .page-id-6932 .fusion-header-v1 { /* 안전검증업체 */
-  background: url(/wp-content/uploads/2018/07/안전검증업체.jpg);
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/07/08141326/%EC%95%88%EC%A0%84%EA%B2%80%EC%A6%9D%EC%97%85%EC%B2%B42.jpg);
 }
 .page-id-6943 .fusion-header-v1 { /* 먹튀사이트 */
-  background: url(/wp-content/uploads/2018/07/먹튀사이트.jpg);
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/07/08141324/%EB%A8%B9%ED%8A%80%EC%82%AC%EC%9D%B4%ED%8A%B8.jpg);
 }
 .page-id-6946 .fusion-header-v1 { /* 신규사이트 */
-  background: url(/wp-content/uploads/2018/07/신규사이트2.jpg);
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/07/08141327/%EC%8B%A0%EA%B7%9C%EC%82%AC%EC%9D%B4%ED%8A%B82.jpg);
 }
 .page-id-6951 .fusion-header-v1 { /* 고객센터 */
-  background: url(/wp-content/uploads/2018/07/고객센터.jpg);
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/07/08141325/%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0.jpg);
+}
+.page-id-6949 .fusion-header-v1 { /* 먹폴픽방 */
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/08/09191200/mtp-picbang.jpg);
+}
+.page-id-6010 .fusion-header-v1 { /* 먹폴TV */
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/08/09191303/mtp-tv.jpg);
 }
 .fusion-header-v1 {
   max-width: 1230px;
@@ -70,7 +76,7 @@
 /* 홈페이지 풀백그라운드 */
 .fs-background {
   display: none;
-  background: url(/wp-content/uploads/2018/05/main_render.jpg) center center no-repeat;
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/05/08141433/main_render.jpg) center center no-repeat;
   width: 100%;
   height: calc(90vh);
   position: absolute;
@@ -265,7 +271,7 @@ html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden]{
   color: #fff;
 }
 body {
-  background: url(/wp-content/uploads/2018/05/bg_all.jpg) repeat;
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/05/08141432/bg_all.jpg) repeat;
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: 0;
@@ -479,16 +485,16 @@ body.has-sidebar #content{
   opacity: 0;
 }
 #footer .fusion-icon-facebook{
-  background-image: url(/wp-content/uploads/2018/05/fb.png)
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/05/08141431/fb.png)
 }
 #footer .fusion-icon-instagram{
-  background-image: url(/wp-content/uploads/2018/05/inst.png)
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/05/08141431/inst.png)
 }
 #footer .fusion-icon-twitter{
-  background-image: url(/wp-content/uploads/2018/05/twit.png)
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/05/08141431/twit.png)
 }
 #footer .fusion-icon-googleplus{
-  background-image: url(/wp-content/uploads/2018/07/gprofile_button-64.png)
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/07/08141241/gprofile_button-64.png)
 }
 .fusion-social-links-footer{
   width: 20%;
@@ -506,7 +512,7 @@ body.has-sidebar #content{
   height: calc(90vh);
   padding: 0 !important;
   background-color: rgba(0,0,0,0);
-  background: url(/wp-content/uploads/2018/05/main_render_fs.jpg) center center no-repeat;
+  background: url(https://s3-ap-northeast-1.amazonaws.com/mtpolice/wp-content/uploads/2018/05/08141430/main_render_fs.jpg) center center no-repeat;
   background-size: cover;
 }
 
