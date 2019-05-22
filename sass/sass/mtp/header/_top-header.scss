@@ -1,0 +1,111 @@
+// ----- Custom Elements ----- //
+
+// ----- Top Header Design ----- //
+// --- Hide on mobile --- //
+#top-header {
+    display: none;
+    // Top header apply flex
+    .container {
+        @include flexbox;
+    }
+}
+// --- //
+
+@include media-breakpoint-up($breakpoint__mobile-nav) { // <- set bootstrap mobile menu breakpoint
+    // --- Top header properties --- //
+    #top-header {
+        // Show on PC
+        display: block;
+    }
+    // Top header hide on fixed header scroll
+    .site-header.sticky #top-header {
+        display: none;
+    }
+    // --- //
+
+    // --- Widget left text widget design --- //
+    #top-header {
+        .container {
+            // Left widget text
+            #header-widget-1 {
+                @include flexbox;
+                @include align-items(center);
+                margin-left: 110px; // widget positioning
+                width: 100%; // extend to 50%
+                .widget {
+                    .textwidget {
+                        p {
+                            display: block;
+                            @include rfs(11);
+                            font-weight: 900;
+                            margin-bottom: 0;
+                            margin-top: .2rem; 
+                        }
+                    }
+                }
+            }
+            // Right widget secondary nav
+            .navbar-secondary {
+                width: 100%;
+                .nav-wrapper {
+                    .menu-secondary {
+                        // Display none reset
+                        @include flexbox;
+                        // Nav position right
+                        @include justify-content(flex-end);
+                        // Top header nav align right
+                        .navbar-nav {
+                            @include flex-just(flex-end);
+                            li {
+                                // Secondary nav divider
+                                &:not(:first-child):before  {
+                                    display: block;
+                                    position: absolute;
+                                    top: 13px;
+                                    right: 69px;
+                                    width: 1px;
+                                    height: .5rem;
+                                    content: '';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Secondary nav divider login pos
+    body.logged-in #top-header .container .navbar-secondary .nav-wrapper .menu-secondary .navbar-nav li:not(:first-child):before {
+        right: 80px;
+    }
+}
+
+// ----- Responsive top header height
+// Top header xs height
+#top-header .container {
+    height: $height__xs-top-header;
+}
+@include media-breakpoint-up(sm) {
+    // top header height
+    #top-header .container {
+        height: $height__sm-top-header;
+    }
+}
+@include media-breakpoint-up(md) {
+    // top header height
+    #top-header .container {
+        height: $height__md-top-header;
+    }
+}
+@include media-breakpoint-up(lg) {
+    // top header height
+    #top-header .container {
+        height: $height__lg-top-header;
+    }
+}
+@include media-breakpoint-up(xl) {
+    // top header height
+    #top-header .container {
+        height: $height__xl-top-header;
+    }
+}

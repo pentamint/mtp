@@ -1,0 +1,165 @@
+/*!
+Theme Name: MTP
+Theme URI: http://underscores.me/
+Author: MTP
+Author URI: https://www.mt-police.com
+Description: Theme developed by MTP
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: www.mt-police.com
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Zestk is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Bootstrap
+# Woocommerce
+# MTP (customized)
+  ## Utilities
+  ## Transitions
+# Typography
+# Elements (customized)
+# Forms
+# Theme (customized)
+# Navigation (customized)
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content (customized)
+	## Posts and pages
+	## Comments
+# Footer (customized)
+# Header (customized)
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Applications (customized)
+# Modules (customized)
+--------------------------------------------------------------*/
+@import "mtp/variables-site/variables-site";
+@import "mtp/mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Bootstrap
+--------------------------------------------------------------*/
+@import "../bootstrap/scss/bootstrap";
+
+/*--------------------------------------------------------------
+# Woocommerce
+--------------------------------------------------------------*/
+@import "mtp/modules/plugin-woocommerce";
+
+/*--------------------------------------------------------------
+# MTP
+--------------------------------------------------------------*/
+@import "mtp/base";
+@import "mtp/utility";
+@import "mtp/transitions/transitions";
+@import "mtp/modules/custom-cross-browser";
+@import "mtp/modules/custom-gutenberg";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "mtp/typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "mtp/elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Theme
+--------------------------------------------------------------*/
+@import "mtp/theme";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "mtp/navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "mtp/content/content";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "mtp/footer/footer";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@import "mtp/header/header";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Applications
+--------------------------------------------------------------*/
+@import "mtp/navigation/hamburgers-settings";
+@import "mtp/applications/hamburgers/hamburgers";
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+@import "mtp/modules/plugin-custom-content-shortcode";
+@import "mtp/modules/plugin-tablepress";
+@import "mtp/modules/plugin-kboard";
+@import "mtp/modules/custom-bootstrap";
+@import "mtp/modules/custom-searchform";
