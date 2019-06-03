@@ -45,14 +45,14 @@
                 }
             }
             // Right widget secondary nav
-            .navbar-secondary {
+            .navbar-secondary { // .navbar
                 width: 100%;
+                // Nav position right
+                @include justify-content(flex-end);
                 .nav-wrapper {
-                    .menu-secondary {
+                    .menu-secondary { // .navbar-collapse
                         // Display none reset
                         @include flexbox;
-                        // Nav position right
-                        @include justify-content(flex-end);
                         // Top header nav align right
                         .navbar-nav {
                             @include flex-just(flex-end);

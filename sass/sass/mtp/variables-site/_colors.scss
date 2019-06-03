@@ -66,11 +66,19 @@
                                     .dropdown-menu.show {
                                         background-color: $ng-base-sub-color;
                                         .nav-item {
+                                            .dropdown-item {
+                                                background-color: $ng-base-sub-color;
+                                                color: $font-color-ng;
+                                                &:hover {
+                                                    color: $font-color-ng;
+                                                }
+                                            }
                                             &.current-menu-item {
-                                                .nav-link {
+                                                .dropdown-item {
                                                     background-color: $ng-base-sub-color;
                                                     color: $font-color-ng;
                                                     &:hover {
+                                                        background-color:$ng-base-sub-color;
                                                         color: $font-color-ng;
                                                     }
                                                 }
@@ -128,7 +136,6 @@
 .btn.btn-primary {
     background-color: $secondary-color;
     border-color: $secondary-color;
-    border-radius: 0; // Edges squared
     &:hover {
         background-color: $primary-color;
         border-color: $primary-color;
