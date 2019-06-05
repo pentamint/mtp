@@ -44,20 +44,18 @@
                     }
                 }
             }
-            // Right widget secondary nav
-            .navbar-secondary { // .navbar
+            // right widget secondary nav
+            nav { // .navbar, .navbar-secondary
                 width: 100%;
-                // Nav position right
+                // top header nav align right
                 @include justify-content(flex-end);
                 .nav-wrapper {
-                    .menu-secondary { // .navbar-collapse
-                        // Display none reset
+                    .navbar-collapse { //  .menu-secondary
+                        // display none reset
                         @include flexbox;
-                        // Top header nav align right
-                        .navbar-nav {
-                            @include flex-just(flex-end);
-                            li {
-                                // Secondary nav divider
+                        >ul { // #menu-secondary-menu .navbar-nav
+                            >li { // .nav-item
+                                // secondary nav divider
                                 &:not(:first-child):before  {
                                     display: block;
                                     position: absolute;

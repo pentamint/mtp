@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-@import "links-clean";
+@import "links";
 
 /*--------------------------------------------------------------
 ## Post Navigation
@@ -9,19 +9,25 @@
 @import "post-nav";
 
 /*--------------------------------------------------------------
-## Mobile Menus
+## Mobile Menu Type
 --------------------------------------------------------------*/
 // @import "mobile/slide-in-left";
 @import "mobile/slide-in-right";
-// Menu design 1 - left bar block on hover
-@import "mobile/design/design1";
+
+// Optional header components
+@import "mobile/icon-links";
+
+/*--------------------------------------------------------------
+## Mobile Menu Design
+--------------------------------------------------------------*/
+// Slide menu design v1 - left bar block on hover
+@import "mobile/design/slide-v1";
+//
 
 /*--------------------------------------------------------------
 ## Navigation Layout
 --------------------------------------------------------------*/
 @import "default";
-@import "nav-row-fit";
-@import "nav-secondary-menu";
 
 /* ----- Theme Codes ----- */
 
