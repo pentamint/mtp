@@ -47,13 +47,13 @@
                         background-color: $primary-color;
                         color: $font-color-ng;
                         &:hover {
-                          background-color: $secondary-color;
+                          background-color: $primary-color;
                           color: $font-color-ng;
                         }
                       }
                       &[aria-expanded="false"] {
                         &:hover {
-                          background-color: $secondary-color;
+                          background-color: $primary-color;
                           color: $font-color-ng;
                         }
                       }
@@ -91,21 +91,25 @@
       }
     } // #main-header
   } // header
-  .footer-wrapper {
-    background-color: $ng-base-color;
-    border-top-color: $base-color;
+  //
+  #main-footer {
+    background-color: $footer-bg-color;
+    border-top-color: $line-footer-top;
+    color: $font-footer-color;
   }
-  .colophon-wrapper {
-    background-color: $ng-base-sub-color;
-    border-top-color: $line-color-ng;
+  #bottom-footer {
+    background-color: $colophon-bg-color;
+    border-top-color: $line-colophon-top;
     .container {
       .row {
-        .col-md-12 {
-          footer {
-            .site-info {
-              color: $font-color-ng;
-              > a {
-                color: $font-color-ng;
+        > div {
+          &:nth-of-type(1) { // column 1
+            footer {
+              .site-info {
+                color: $font-colophon-color;
+                > a {
+                  color: $font-color-ng-ac;
+                }
               }
             }
           }
@@ -144,6 +148,17 @@
         nav { // .navbar-primary .navbar
           .nav-wrapper {
             .navbar-collapse { // .menu-primary
+              > form { // #searchform
+                &.show {
+                  .input-group {
+                    > span { // .input-group-btn
+                      > button { // floating button
+                        border-color: #ccc;
+                      }
+                    }
+                  }
+                }
+              }
               > ul { // #menu-primary-menu .navbar-nav
                 > li { // .nav-item
                   > a { // .nav-link
@@ -166,21 +181,24 @@
       }
     }
   }
-  .footer-wrapper {
-    background-color: $ng-base-color;
-    border-top-color: $base-color;
+  #main-footer {
+    background-color: $footer-bg-color;
+    border-top-color: $line-footer-top;
+    color: $font-footer-color;
   }
-  .colophon-wrapper {
-    background-color: $ng-base-sub-color;
-    border-top-color: $line-color-ng;
+  #bottom-footer {
+    background-color: $colophon-bg-color;
+    border-top-color: $line-colophon-top;
     .container {
       .row {
-        .col-md-12 {
-          footer {
-            .site-info {
-              color: $font-color-ng;
-              > a {
-                color: $font-color-ng;
+        > div {
+          &:nth-of-type(1) { // column 1
+            footer {
+              .site-info {
+                color: $font-colophon-color;
+                > a {
+                  color: $font-color-ng-ac;
+                }
               }
             }
           }
@@ -200,12 +218,22 @@
   background-color: $accent-color;
   border-color: $accent-color;
 }
-.btn.btn-primary {
+.btn.btn-primary { // button
   background-color: $secondary-color;
   border-color: $secondary-color;
   &:hover {
     background-color: $primary-color;
     border-color: $primary-color;
+    .fa-search {
+      > path {
+        fill: $font-color-ng-ac;
+      }
+    }
+  }
+  .fa-search {
+    > path {
+      fill: $font-color;
+    }
   }
 }
 

@@ -23,7 +23,8 @@ header { // #masthead .site-header
                         }
                         &.show {
                             display: block;
-                            position: absolute;
+                            position: fixed; // changed from absolute to fill right area
+                            padding-top: 48px; // added extra space on top to clear hamburger menu
                             right: 0;
                             width: 100%; // mobile menu transition end state properties
                             height: 100vh;

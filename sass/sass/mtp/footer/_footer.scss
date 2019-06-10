@@ -2,43 +2,163 @@
 
 // ----- Theme Style ----- //
 
-.footer-wrapper {
-  padding: 4rem 0 2rem 0;
-  .container {
-    footer { // #footer-sidebar .row .widget-area
-      > div {
-        // footer sidebar columns bottom margins
-        margin-bottom: 1.25rem;
-      }
-    }
-  }
-}
-.colophon-wrapper {
+#top-footer {
+  padding: 10px 0;
+  background-color: #18429b;
   .container {
     .row {
-      padding: 1.25rem 0;
-    }
-  }
-}
-
-@include media-breakpoint-up($breakpoint__mobile-nav) {
-  .footer-wrapper {
-    padding: 4rem 0 2rem 0;
-    .container {
-      footer { // #footer-sidebar .row .widget-area
-        > div {
-          // footer sidebar columns bottom margins
-          margin-bottom: 1.25rem;
+      @include align-items(center);
+      .top-footer-nav {
+        > ul { // .navbar-nav #menu-primary-menu-1
+          @include flex-direction(row);
+          @include justify-content(center);
+          padding: 15px 0;
+          > li { // .nav-item
+            padding: 0 15px;
+            > a { // .nav-link
+              color: #fff;
+            }
+          }
         }
       }
     }
   }
-  .colophon-wrapper {
+}
+#main-footer {
+  padding: 2rem 0 0 0;
+  .container {
+    .top-info-wrapper {
+      .footer-logo {
+        text-align: center;
+        img {
+          margin-bottom: 20px;
+          max-width: 10rem;
+        }
+      }
+      .footer-company-info {
+        margin-bottom: 20px;
+        color: #ccc;
+        text-align: center;
+        &::after {
+          content: "";
+          width: 80%;
+          border-bottom: 1px solid #ccc;
+          bottom: 0;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+        p {
+          &:nth-of-type(2) {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    footer { // #footer-sidebar .row .widget-area
+      margin-top: 10px;
+      > div { 
+        // footer sidebar columns bottom margins
+        margin-bottom: 1.25rem;
+        h2 {
+          margin-bottom: 1.5rem;
+          color: #e9e9e9;
+        }
+        ul {
+          li {
+            margin-bottom: 1rem;
+            a {
+              color: #ccc;
+            }
+          }
+        }
+      }
+      #footer-sidebar2 {
+        color: #ccc;
+      }
+    }
+  }
+}
+#bottom-footer {
+  .container {
+    .row {
+      padding: 1.25rem 0;
+      > div {
+        &:nth-of-type(1) { // column 1
+          footer { // #colophon .site-footer
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #top-footer {
+    .container {
+      .row {
+        .top-footer-nav {
+          > ul { // #menu-top-footer-menu .navbar-nav
+            @include justify-content(flex-start);
+            padding: 0;
+            > li { // .nav-item
+              padding: 0;
+              > a { // .nav-link
+                padding: 0.75rem 0.75rem;
+              }
+              &:nth-of-type(1) {
+                > a {
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #main-footer {
+    padding: 3rem 0 2rem 0;
+    .container {
+      .top-info-wrapper {
+        @include align-items(center);
+        padding-bottom: 30px;
+        border-bottom: 1px solid #2b3449;
+        .footer-logo {
+          text-align: left;
+          img {
+            margin-bottom: 0;
+            max-width: 100%;
+          }
+        }
+        .footer-company-info {
+          margin-bottom: 0;
+          text-align: left;
+          &::after {
+            display: none;
+          }
+          p {
+            &:nth-of-type(1) {
+              margin-bottom: .5rem;
+            }
+            &:nth-of-type(2) {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      footer {
+        margin-top: 40px;
+      }
+    }
+  }
+  #bottom-footer {
     .container {
       .row {
         padding: 1.5rem 0;
-        .col-md-12 {
-          footer { // #colophon .site-footer
+        > div {
+          &:nth-of-type(1) { // column 1
 
           }
         }

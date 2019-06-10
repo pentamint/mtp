@@ -1,0 +1,46 @@
+/**
+ * Module: Custom Social Widget
+ *
+ */
+.top-footer-social-links {
+    margin-bottom: 10px;
+    .widget {
+        // remove default margin bottom
+        margin: 0;
+    }
+}
+.social_links {
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+    > a {
+        // icon size
+        @include rfs(24);
+        padding: .5rem;
+        svg {
+            path {
+                // icon color
+                fill: #fff;
+            }
+        }
+        &:hover {
+            svg {
+                path {
+                    fill: #ccc;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    .top-footer-social-links  {
+        margin-bottom: 0;
+    }
+    .social_links {
+        @include justify-content(flex-end);
+        > a {
+            // icon size
+            @include rfs(14);
+        }
+    }
+}

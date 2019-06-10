@@ -34,12 +34,6 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php if(is_home() && is_front_page()): ?>
-	<?php
-	get_sidebar();
-	?>
-<?php endif; ?>
 <?php
+get_sidebar();
 get_footer();
-?>
