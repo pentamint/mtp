@@ -17,15 +17,6 @@
 
 /* ----- Theme Style ----- */
 
-/* --- Global --- */
-// remove single post thumbnails
-.post-thumbnail {
-	display: none;
-}
-// page title hide on all posts & pages
-.entry-header {
-	display: none;
-}
 // Mobile all posts & pages spacing top (not home) due to banner
 body:not(.home):not(.search) .site-content {
 	padding-top: 3em;

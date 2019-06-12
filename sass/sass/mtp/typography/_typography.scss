@@ -6,8 +6,11 @@ optgroup,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	@include rfs(14);
+	@include rfs(12);
 	line-height: $font__line-height-body;
+}
+h2 {
+	@include rfs(16);
 }
 p {
 	margin-bottom: 0;
@@ -22,7 +25,10 @@ p {
 	select,
 	optgroup,
 	textarea {
-		@include rfs(16);
+		@include rfs(14);
+	}
+	h2 {
+		@include rfs(18);
 	}
 }
 @include media-breakpoint-up(lg) { // 992px and up

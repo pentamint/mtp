@@ -135,6 +135,16 @@ function mtp_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	// Header banner for post & pages
+	register_sidebar( array(
+		'name'          => 'Fullwidth Header Banner', 'WeMnA',
+		'id'            => 'fullwidth-header-banner',
+		'description'   => 'Add widgets here.', 'WeMnA',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 	// Top footer widget area
 	register_sidebar( array(
 		'name'          => 'Top Footer Widget',

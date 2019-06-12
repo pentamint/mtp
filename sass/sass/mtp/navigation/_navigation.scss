@@ -46,8 +46,9 @@ header { // #masthead .site-header
                   @include rfs(14);
                   > li { // .nav-item
                     > a { // .dropdown-item
-                      // 2nd depth menu item spacing
-                      padding: 0.5rem 0 0.5rem 1rem;
+                      &:active {
+                        background-color: #ef512a;
+                      }
                     }
                   }
                 }
@@ -76,7 +77,7 @@ header { // #masthead .site-header
                   > a { // .nav-link
                     // PC top nav menu item design
                     padding: 0.28rem 0.75rem;
-                    @include rfs(10);
+                    @include rfs(12);
                     font-weight: 700;
                   }
                 }
@@ -98,17 +99,20 @@ header { // #masthead .site-header
                   > a { // .nav-link
                     // PC main nav menu item spacing                    
                     padding: 0.5rem 1.25rem;
-                    @include rfs(16);
+                    @include rfs(14);
                     font-weight: 700;
+                    &:hover {
+                      color: #ef512a;
+                    }
                   }
                   > ul { // .dropdown-menu
                     // PC main nav expanded dropdown menu top border design                   
-                    border-top: 3px solid #2643AD;
+                    border-top: 3px solid #666;
                     &.show {
                       > li { // .nav-item
                         > a { // .dropdown-item
                           // dropdown item font size
-                          @include rfs(16);
+                          @include rfs(14);
                           &:hover {
                             font-weight: 700;
                           }

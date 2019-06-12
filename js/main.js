@@ -59,17 +59,29 @@
     };
   });
 
+  // add sidebar class to body when sidebar is active
+  $(document).ready(function() {
+    if ( $('#secondary').length > 0 ) {
+      $('body').addClass('has-sidebar');
+    }
+  });
+
   // add hamburgers support for bootstrap mobile menu
   $('.navbar-toggle').click(function () {
     $('.navbar-toggle').toggleClass('is-active');
   });
 
-	// ----- Add bootstrap container to gutenberg wp-block-column class
+	// add bootstrap container to gutenberg wp-block-column class
 	$('header.page-header').addClass('container');
 	$('header.entry-header').addClass('container');
-  $('.entry-content > .wp-block-columns:not(.fullwidth)').wrapInner("<div class='container' />");
   $('body:not(.no-sidebar) .site-content').wrapInner("<div class='container' />");
-  $('body.woocommerce .site-content').wrapInner("<div class='container' />");
+
+ // add bootstrap grid to archive posts
+  if ( $('body').hasClass('archive') ) {
+    $('.content-area').addClass('container');
+    $('.site-main').addClass('row');
+    $('article').addClass('col-12 col-sm-6 col-md-4');
+  };
 
 
 } )( jQuery );
