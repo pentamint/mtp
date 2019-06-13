@@ -76,7 +76,10 @@
 	$('header.entry-header').addClass('container');
   $('body:not(.no-sidebar) .site-content').wrapInner("<div class='container' />");
 
- // add bootstrap grid to archive posts
+  // append header banner to site content
+  $('.header-banner').insertBefore('.site-content > .container');
+
+  // add bootstrap grid to archive posts
   if ( $('body').hasClass('archive') ) {
     $('.content-area').addClass('container');
     $('.site-main').addClass('row');

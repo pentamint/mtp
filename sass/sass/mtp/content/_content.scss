@@ -17,10 +17,38 @@
 
 /* ----- Theme Style ----- */
 
-// Mobile all posts & pages spacing top (not home) due to banner
-body:not(.home):not(.search) .site-content {
-	padding-top: 3em;
+.site-content {
+	.header-banner {
+		position: relative;
+		.wrapper {
+			position: absolute;
+    		left: 50%;
+    		top: 50%;
+    		color: #fff;
+			transform: translate(-50%, -50%);
+			.archive-title {
+				text-align: center;
+			}
+			.archive-description {
+				text-align: center;
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.container {
+		#primary {
+			#main {
+				// hide redundant page header
+				.page-header {
+					display: none;
+				}
+			}
+		}
+	}
 }
+
 .single .entry-content {
 	margin-top: 0;
 }
@@ -28,10 +56,6 @@ body:not(.home):not(.search) .site-content {
 	// all posts & pages spacing bottom
 	.site-content {
 		padding-bottom: 4em;
-	}
-	// PC all posts & pages spacing top (not home) due to banner
-	body:not(.home):not(.search) .site-content {
-		padding-top: 4em;
 	}
 }
 /* ----- /Global Elements ----- */

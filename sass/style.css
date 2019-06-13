@@ -9603,18 +9603,29 @@ header #main-header .container nav {
   display: block; }
 
 /* ----- Theme Style ----- */
-body:not(.home):not(.search) .site-content {
-  padding-top: 3em; }
+.site-content .header-banner {
+  position: relative; }
+  .site-content .header-banner .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%); }
+    .site-content .header-banner .wrapper .archive-title {
+      text-align: center; }
+    .site-content .header-banner .wrapper .archive-description {
+      text-align: center; }
+      .site-content .header-banner .wrapper .archive-description p {
+        margin-bottom: 0; }
+.site-content .container #primary #main .page-header {
+  display: none; }
 
 .single .entry-content {
   margin-top: 0; }
 
 @media (min-width: 992px) {
   .site-content {
-    padding-bottom: 4em; }
-
-  body:not(.home):not(.search) .site-content {
-    padding-top: 4em; } }
+    padding-bottom: 4em; } }
 /* ----- /Global Elements ----- */
 /*--------------------------------------------------------------
 # Footer

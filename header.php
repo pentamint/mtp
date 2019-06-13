@@ -258,17 +258,6 @@
 
 	</header><!-- #masthead -->
 
-
-	<!-- Custom Code -->
-	<?php if ( is_active_sidebar ( 'fullwidth-header-banner' ) ) : ?>
-		<div class="header-widget header-banner" role="complementary">
-			<h2 class="custom-title">
-				<?php $category = get_the_category(); echo $category[0]-> cat_name; ?>
-			</h2>
-			<?php dynamic_sidebar ( 'fullwidth-header-banner' ); ?>
-		</div>
-	<?php endif; ?>
-	<!-- Custom Code -->
-
 	<div id="content" class="site-content">
 
+	
