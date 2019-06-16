@@ -1,0 +1,686 @@
+/*
+Theme Name: OceanWP Child
+Theme URI: https://oceanwp.org/
+Template: oceanwp
+Author: Nick
+Author URI: https://oceanwp.org/about-me/
+Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
+Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custom-menu,post-formats,rtl-language-support,sticky-post,editor-style,threaded-comments,translation-ready,buddypress,custom-colors,featured-images,full-width-template,theme-options,e-commerce
+Version: 1.5.23.1534884749
+Updated: 2018-08-22 05:52:29
+
+*/
+
+/*--------------------------------------------------------------
+ * Default
+** ------------------------------------------------------------- */
+/* html, body {
+    overflow-x: hidden;
+} */
+
+html, body, button, input, select, textarea, .elementor-text-editor {
+	font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', '맑은 고딕', 'malgun gothic', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic',  'Droid sans', sans-serif !important;
+}
+
+/*--------------------------------------------------------------
+ * Color
+** ------------------------------------------------------------- */
+body {
+    color: #fff;
+}
+/* .elementor-widget-text-editor {
+    color: #929292;
+} */
+
+.color-aqua {
+    color: #9ebdbd;
+}
+.color-aqua-light {
+    color: aqua;
+}
+.color-green-blue {
+    color: #00ffff;
+}
+.color-green {
+    color: #97ffcb;
+}
+.color-orange {
+    color: #e6784f;
+}
+.color-red {
+    color: #ec3642;
+}
+.color-blue {
+    color: #91c1e8;
+}
+.color-divid {
+    color: #4e4e4e;
+}
+.center {
+    text-align: center;
+}
+
+.ur-form-grid label {
+    color: #929292;
+}
+
+
+/*--------------------------------------------------------------
+ * Header
+** ------------------------------------------------------------- */
+.topbar-content .fa {
+    margin: 0 7px;
+}
+
+.oceanwp-github .fa::before {
+    content: "\f23a";
+}
+
+/* 메뉴 */
+.nav-content {
+    display: none;
+}
+
+/* 안전 검증업체 */
+.menu-item-10374 {
+    position: relative;
+}
+.menu-item-10374 a::after {
+    font-family: fontAwesome;
+    /* content: "\f097"; */
+    content: "\f219";
+    margin-left: 2px;
+    color: #60f2fc;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(95, 128, 235, 0.4);
+    animation: pulse 2s infinite;
+}
+
+.widget_nav_menu .menu-item-10374 a::after {
+    left: 96px;
+}
+
+.footer-navi .menu-item-10374 a::after {
+    left: 80px;
+}
+.oceanwp-custom-menu .menu-item-10374 a::after {
+    top: -5px;
+}
+
+/* 애니 */
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(95, 128, 235, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(95, 128, 235, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(95, 128, 235, 0);
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(95, 128, 235, 0.4);
+        box-shadow: 0 0 0 0 rgba(95, 128, 235, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(95, 128, 235, 0);
+        box-shadow: 0 0 0 10px rgba(95, 128, 235, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(95, 128, 235, 0);
+        box-shadow: 0 0 0 0 rgba(95, 128, 235, 0);
+    }
+}
+
+/*--------------------------------------------------------------
+ * HOME
+** ------------------------------------------------------------- */
+.home #main #content-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.home #primary {
+    margin-bottom: 0;
+}
+
+.home .page-header {
+    display: none;
+}
+
+.home h2 {
+    text-shadow: 2px 2px 2px #2d2f2d;
+}
+
+/* 검색 */
+.home #searchform {
+    text-align: center;
+}
+.home #s {
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid #e0e0e0;
+    color: #fff;
+    height: 53px;
+    border-radius: 50px;
+    max-width: 60%;
+    font-size: 1.2em;
+}
+
+.home #s::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(228, 228, 228);
+    opacity: 1; /* Firefox */
+    text-align: center;
+}
+.home #s:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(228, 228, 228);
+    text-align: center;
+}
+.home #s::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(228, 228, 228);
+    text-align: center;
+}
+
+/* 최신 글 목록 */
+.short_recent_list li {
+    margin-bottom: 7px;
+}
+
+/* 카톡, 텔레그램 */
+.contact-katalk {
+    position: absolute;
+    right: -40px;
+    top: -210px;
+    display: inline-block;
+    width: auto !important;
+}
+.banner-family {
+    position: absolute;
+    left: 0;
+    top: -210px;
+    display: inline-block;
+    width: auto !important;
+}
+.banner-family .attachment-large {
+    width: 300px;
+    height: 146px;
+}
+
+/* 카운터 */
+.elementor-counter-number {
+    color: #91c1e8;
+}
+
+/*--------------------------------------------------------------
+ * 본문
+** ------------------------------------------------------------- */
+.entry-content, .single-page-article {
+    font-size: 1.3em;
+}
+
+.page-header-title {
+    color: #bb2b2b !important;
+    font-weight: bold;
+    max-width: 70%;
+}
+
+.entry-content h2 {
+    border-left: 5px solid #ec3642;
+    padding-left: 10px;
+    margin-top: 50px;
+    color: #e0e0e0;
+}
+.entry-content h2:first-child {
+    margin-top: 0;
+}
+
+.entry-content h3 {
+    margin-top: 30px;
+    color: #e8bf74;
+}
+
+.entry-content strong, .entry-content b, .label-link {
+    color: #e6784f;
+}
+
+.entry-content a, .single-footer-content a, .label-link {
+    color: #ec3642 !important;
+    text-decoration: none !important;
+    display: inline-block;
+    border-bottom: 2px dotted #983a40;
+    line-height: 1.5;
+}
+
+/* 목록 보기 */
+.cat-list-btn {
+    margin-top: 30px;
+    text-align: right;
+}
+.cat-list-btn > a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #ec3642;
+}
+
+/* 댓글, 관련글 */
+.comment-date, .related-post .published, .comment-form-url {
+    display: none;
+}
+
+.comment-body {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.comment-entry > .comment-content {
+    font-size: 1.2em;
+}
+
+.related-post-title a {
+    color: #eee;
+}
+
+/* 인라인 관련 */
+.entry-content span {
+    text-decoration: none !important;
+}
+
+.entry-content .center {
+    text-align: center;
+}
+
+/* 바닥 문구 */
+.single-footer-content {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #222;
+}
+
+
+/*--------------------------------------------------------------
+ * 사이드바
+** ------------------------------------------------------------- */
+.widget-title {
+    font-size: 1.3em;
+}
+
+.widget_nav_menu a, .widget_recent_entries a {
+    color: #ddd;
+}
+
+/* 네비게이션 */
+.widget_nav_menu {
+    font-size: 1.1em;
+}
+.widget_nav_menu .menu-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #4e4e4e;
+}
+.widget_nav_menu .menu-item::before {
+    content: "\f105";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.current-menu-item > a {
+    color: #ec3642 !important;
+}
+
+/* 최신글 */
+.widget_recent_entries li {
+    border-bottom: 1px solid #4e4e4e;
+}
+.widget_recent_entries li:first-child {
+    border-top: none;
+}
+
+
+/*--------------------------------------------------------------
+ * 카테고리
+** ------------------------------------------------------------- */
+.archive .entry-title > a, .search .entry-title > a {    
+    color: #ffa185;
+    font-size: 18px;
+}
+.archive .entry-title > a:hover, .search .entry-title > a:hover {
+    color: #ec3642;
+}
+
+/* 공지, 픽방 */
+.category-28 .entry-title > a, .category-166 .entry-title > a {
+    color: #e0e0e0;
+    font-size: 17px;
+}
+.category-28 .entries > .entry:nth-child(odd), .category-166 .entries > .entry:nth-child(odd) {
+    background-color: #2e2e2e;
+}
+
+.search-results article {
+    border-bottom: 1px solid #4e4e4e;
+}
+
+.banner_category {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.banner_category video {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* 먹폴 픽방 tag 분류 */
+.tab-btn-wrap {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    background-color: #3E3E3E;
+}
+.tab-btn {
+    float: left;
+    padding: 5px 15px;
+    border-right: 1px solid #3c3c3d;
+    cursor: pointer;
+    color: #fff;
+    background-color: #555555;
+    background: radial-gradient(ellipse at center, rgb(73, 73, 73) 0%, rgb(79, 79, 79) 56%, rgb(77, 77, 77) 100%);
+}
+.tab-btn.active, .tab-btn:hover {
+    box-shadow: inset 0px -2px 0px 0px #cb2027;
+    font-weight: bold;
+    background: #2e2e2e;
+    color: #c6c6c6;
+}
+
+/*--------------------------------------------------------------
+ * KBoard 대체 > 공지사항, 먹폴픽방
+** ------------------------------------------------------------- */
+.bbs_head, .bbs_body {
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid #4e4e4e;
+}
+.bbs_li {
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+    border-right: 1px solid #4e4e4e;
+    text-align: center;
+    height: 39px;
+}
+
+.bbs_title {
+    width: 70%;
+}
+.bbs_author {
+    width: 15%;
+}
+.bbs_date {
+    width: 15%;
+    border-right: none;
+}
+
+.category-28 .oceanwp-row, .category-166 .oceanwp-row {
+    margin: 0;
+}
+.bbs_body .entry-title, .recent-title {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
+    display: block;
+    width: 99%;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    overflow:hidden;
+}
+/* home > 최신글 */
+.recent-title {
+    margin-bottom: 5px;
+}
+.recent-title a {
+    color: #fff;
+}
+
+.bbs_body {
+    border-bottom: none;
+}
+.post:last-child .bbs_body {
+    border-bottom: 1px solid #4e4e4e;
+}
+
+/* 설명 */
+/* .category-28 .tax-desc, .category-166 .tax-desc {
+    position: absolute;
+    top: -51px;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
+} */
+
+
+/*--------------------------------------------------------------
+ * KBoard
+** ------------------------------------------------------------- */
+#kboard-default-document .kboard-content .content-view {
+    color: #000;
+}
+
+.kboard-prev-document a, .kboard-next-document a {
+    color: #eee !important;
+}
+
+
+/*--------------------------------------------------------------
+ * 고객센터
+** ------------------------------------------------------------- */
+.elementor-tabs-wrapper {
+    background-color: #3e3e3e;
+}
+.elementor-tab-title.elementor-active {
+    background-color: #313131;
+}
+
+
+/*--------------------------------------------------------------
+ * footer
+** ------------------------------------------------------------- */
+.footer-logo {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.short_comments_list {
+    line-height: 2;
+}
+
+.footer-banner {
+    margin-top: 29px;
+}
+
+/* 메뉴 */
+.footer-navi .menu {
+    text-align: center;
+}
+.footer-navi .sub-menu, .widget_nav_menu .sub-menu {
+    display: none;
+}
+
+.footer-navi li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.footer-navi li:last-child {
+    margin-right: 0;
+}
+.footer-navi a {
+    color: #e0e0e0;
+}
+
+#copyright a {
+    color: #ec3642 !important;
+}
+
+/* 팝업 */
+.pum-theme-987 .pum-content + .pum-close, .pum-theme-lightbox .pum-content + .pum-close {
+    right: 0;
+}
+
+/* 모바일 추가 메뉴 */
+.mobile-add-menu {
+    margin-top: 25px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+ * IE
+** ------------------------------------------------------------- */
+.elementor-msie.home .short_recent_list li {
+    display: block;
+}
+.elementor-msie.home .elementor-shape {
+    display: none;
+}
+
+
+/*--------------------------------------------------------------
+ * 구글 맞춤검색 - page-id-16091
+** ------------------------------------------------------------- */
+/* input */
+.gsib_a, .gsib_b {
+    padding: 4px 6px !important;
+    background-color: #222;
+}
+
+/* button */
+button.gsc-search-button {
+    background-color: #222;
+    color: #eee;
+    height: 32px;
+    position: relative;
+    top: -17px;
+}
+
+.sidebar-container .gsc-search-button {
+    display: none;
+}
+.sidebar-container .gsc-input {
+    padding-right: 0 !important;
+}
+
+.gsc-above-wrapper-area, .gsc-adBlock {
+    border-bottom: 1px solid #0d0d0d !important;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+    color: #ccc !important;
+}
+.gsc-result-info, .gsc-orderby {
+    color: #eee !important;
+}
+
+/* 검색결과 */
+.gs-title {
+    padding-bottom: 5px;
+    text-decoration: none !important;
+}
+
+.gsc-cursor-box {
+    margin-top: 30px !important;
+}
+.gsc-cursor-page {
+    padding: 5px 7px;
+}
+
+/*--------------------------------------------------------------
+ * 반응형
+** ------------------------------------------------------------- */
+@media only screen and (min-width: 960px) {
+    
+}
+@media only screen and (max-width: 959px) {
+    .home h2, .home h3 {
+        font-size: 20px !important;
+        line-height: 1.3 !important;
+    }
+
+    .contact-katalk, .banner-family {
+        position: static;
+    }
+    .elementor-element-0377ac9 > .elementor-column-wrap {
+        margin-top: -25px;
+    }
+
+    /* 메인 이미지 */
+    .elementor-6826 .elementor-element.elementor-element-25d6f23 > .elementor-container {
+        min-height: 400px !important;
+    }
+
+    .page-header-title {
+        font-size: 18px;
+    }
+    .page-subheading {
+        line-height: 1.3;
+    }
+    .page-subheading br {
+        display: none;
+    }
+
+    .entry-content {
+        font-size: 1.2em;
+        line-height: 2;
+    }
+    .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5 {
+        font-size: 18px;
+    }
+
+    /* 고객센터 */
+    .page-id-10390 h2.elementor-heading-title {
+        font-size: 20px !important;
+        line-height: 1.3;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .bbs_author, .bbs_date {
+        display: none;
+    }
+    .bbs_title {
+        width: 100%;
+        border-right: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    /* .elementor-6826 .elementor-element.elementor-element-25d6f23 {
+        background-image: url(/wp-content/uploads/2018/11/main-mobile-compressor.jpg);
+    } */
+    .elementor-6826 .elementor-element.elementor-element-25d6f23 > .elementor-container {
+        min-height: 300px !important;
+    }
+    .home #s {
+        height: 40px;
+        border-radius: 40px;
+        max-width: 80%;
+        font-size: 1.1em;
+    }
+
+    #main #content-wrap {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .site-breadcrumbs {
+        position: absolute;
+        left: 900%;
+    }
+
+    .banner_category video {
+        height: auto;
+    }
+}

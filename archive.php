@@ -13,13 +13,15 @@ get_header();
 	<!-- Custom Code -->
 	<?php if ( is_active_sidebar ( 'fullwidth-header-banner' ) ) : ?>
 		<div class="header-widget header-banner" role="complementary">
-			<div class="wrapper">
-				<h2 class="archive-title">
-					<?php $category = get_the_category(); echo $category[0]-> cat_name; ?>
-				</h2>
-				<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
+			<div class="wrapper container">
+				<div class="header-banner-content row">
+					<h2 class="archive-title">
+						<?php $category = get_the_category(); echo $category[0]-> cat_name; ?>
+					</h2>
+					<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
+				</div>
+				<?php dynamic_sidebar ( 'fullwidth-header-banner' ); ?>
 			</div>
-			<?php dynamic_sidebar ( 'fullwidth-header-banner' ); ?>
 		</div>
 	<?php endif; ?>
 	<!-- Custom Code -->

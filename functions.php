@@ -273,5 +273,11 @@ register_nav_menus( array(
 
 // Register Footer Nav Menu
 register_nav_menus( array(
-	'top-footer' => esc_html__( 'Top Footer Menu', 'PBBiz' ),
+	'top-footer' => esc_html__( 'Top Footer Menu', 'mtp' ),
 ) );
+
+// Changing excerpt length
+function new_excerpt_length($length) {
+	return 20;
+	}
+add_filter('excerpt_length', 'new_excerpt_length');

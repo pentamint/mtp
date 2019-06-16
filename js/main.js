@@ -64,6 +64,11 @@
     if ( $('#secondary').length > 0 ) {
       $('body').addClass('has-sidebar');
     }
+    // add bootstrap container & row to sidebar layout
+    if ( $('body').hasClass('has-sidebar') ) {
+      $('.content-area').addClass('container');
+      $('.site-main').addClass('row');
+    };
   });
 
   // add hamburgers support for bootstrap mobile menu
@@ -79,12 +84,10 @@
   // append header banner to site content
   $('.header-banner').insertBefore('.site-content > .container');
 
+
   // add bootstrap grid to archive posts
   if ( $('body').hasClass('archive') ) {
-    $('.content-area').addClass('container');
-    $('.site-main').addClass('row');
     $('article').addClass('col-12 col-sm-6 col-md-4');
   };
-
 
 } )( jQuery );

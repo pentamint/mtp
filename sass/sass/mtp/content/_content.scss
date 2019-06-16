@@ -1,4 +1,4 @@
-@import "../../layout/content-sidebar";
+@import "../layout/content-sidebar";
 // @import "../layout/sidebar-content";
 
 /*--------------------------------------------------------------
@@ -7,6 +7,7 @@
 @import "../../site/primary/posts-and-pages";
 @import "default"; // pm resets
 @import "home"; // home page
+@import "archive"; // archive page
 @import "about-us"; // about us page
 @import "woocommerce-single";
 
@@ -15,25 +16,22 @@
 --------------------------------------------------------------*/
 @import "../../site/primary/comments";
 
+
 /* ----- Theme Style ----- */
 
+// --- Archive --- //
 .site-content {
+	// Header banner design
 	.header-banner {
-		position: relative;
-		.wrapper {
-			position: absolute;
-    		left: 50%;
-    		top: 50%;
-    		color: #fff;
-			transform: translate(-50%, -50%);
-			.archive-title {
-				text-align: center;
+		// a links
+		a {
+			&:hover {
+				color: #ef512a;
 			}
-			.archive-description {
+		}
+		.header-banner-content {
+			.page_description {
 				text-align: center;
-				p {
-					margin-bottom: 0;
-				}
 			}
 		}
 	}
@@ -43,6 +41,39 @@
 				// hide redundant page header
 				.page-header {
 					display: none;
+				}
+				article {
+					.entry-header {
+						padding: 15px;
+						border: solid 1px #e9e9e9;
+						border-bottom-width: 0;
+						.entry-meta {
+							@include flexbox;
+							@include flex-direction(column);
+							.posted-on {
+								display: none;
+							}
+							.byline {
+								display: none;
+							}
+							p {
+								margin-bottom: 0;
+							}
+						}
+					}
+					.card-bottom-wrapper {
+						@include flexbox;
+						@include justify-content(space-between);
+						@include align-items(center);
+						@include flex-wrap(wrap);
+						padding: 15px;
+						border: solid 1px #e9e9e9;
+						background-color: #fafafa;
+						img {
+							max-height: 15px;
+							margin-right: 5px;
+						}
+					}
 				}
 			}
 		}

@@ -76,14 +76,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # MTP
 --------------------------------------------------------------*/
-@import "mtp/base";
-@import "mtp/utility";
+@import "mtp/theme/base";
 @import "mtp/transitions/transitions";
 @import "mtp/modules/custom-cross-browser";
 @import "mtp/modules/custom-gutenberg";
 @import "mtp/modules/custom-bootstrap";
-@import "mtp/modules/custom-searchform";
-@import "mtp/modules/custom-social-widget";
+@import "mtp/modules/custom-utilities";
 
 /*--------------------------------------------------------------
 # Typography
@@ -103,7 +101,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Theme
 --------------------------------------------------------------*/
-@import "mtp/theme";
+@import "mtp/theme/theme";
 
 /*--------------------------------------------------------------
 # Navigation

@@ -1,0 +1,49 @@
+.site-content {
+	.content-area {
+		.site-main { // #main
+
+		}
+	}
+	.widget-area { // #secondary
+		ul {
+			padding: 5px 15px;
+			li {
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+// .site-footer {
+// 	clear: both;
+// 	width: $size__site-main;
+// }
+
+@include media-breakpoint-up(md) {
+	.site-content {
+		.content-area {
+			float: left;
+			margin: 0 (-$size__site-sidebar) 0 0;
+			width: $size__site-main;
+			.site-main { // #main
+				margin-top: 0;
+				// 25% converted to .25
+				margin-right: calc(( 100% - 30px ) * .25);
+				margin-bottom: 0;
+				margin-left: -15px;
+				padding-right: 15px;
+			}
+		}
+		.widget-area { // #secondary
+			float: right;
+			overflow: hidden;
+			width: $size__site-sidebar;
+			li {
+				padding: .5rem;
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+@import "no-sidebar";
+

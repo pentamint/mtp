@@ -8622,85 +8622,6 @@ body {
 button:focus {
   outline: none; }
 
-.p0 {
-  padding: 0 !important; }
-
-.pt0 {
-  padding-top: 0 !important; }
-
-.pb0 {
-  padding-bottom: 0 !important; }
-
-.pr0 {
-  padding-right: 0 !important; }
-
-.pl0 {
-  padding-left: 0 !important; }
-
-.ptb0 {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important; }
-
-.prl0 {
-  padding-right: 0 !important;
-  padding-left: 0 !important; }
-
-.m0 {
-  margin: 0 !important; }
-
-.mt0 {
-  margin-top: 0 !important; }
-
-.mt1 {
-  margin-top: 1rem !important; }
-
-.mt2 {
-  margin-top: 2rem !important; }
-
-.mb0 {
-  margin-bottom: 0 !important; }
-
-.mb1 {
-  margin-bottom: 1rem !important; }
-
-.mb2 {
-  margin-bottom: 2rem !important; }
-
-.ml0 {
-  margin-left: 0 !important; }
-
-.ml1 {
-  margin-left: 1rem !important; }
-
-.ml2 {
-  margin-left: 2rem !important; }
-
-.mr0 {
-  margin-right: 0 !important; }
-
-.mr1 {
-  margin-right: 1rem !important; }
-
-.mr2 {
-  margin-right: 2rem !important; }
-
-.ml0 {
-  margin-left: 0 !important; }
-
-.mtb0 {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important; }
-
-.mrl0 {
-  margin-right: 0 !important;
-  margin-left: 0 !important; }
-
-.en {
-  font-family: "Roboto", sans-serif !important; }
-
-.kr {
-  font-family: "NanumBarunGothic", sans-serif !important; }
-
 a {
   -moz-transition-property: color, background-color, border-color;
   -o-transition-property: color, background-color, border-color;
@@ -8789,107 +8710,85 @@ img:not(.custom-logo) {
 .btn:focus, .btn.focus, .btn-primary:focus, .btn-primary.focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: none; }
 
-/**
- * Module: Custom Bootstrap searchform
- *
- * Installation
- *
- * 1. add searchform.php to wp main folder
- * 2. add <?php get_search_form(); ?> to php template
- * 3. add below searchform toggle snippit to php template
-    <button class="btn btn-primary btn-search-toggle" type="button" data-toggle="collapse" data-target="#searchform" aria-expanded="false" aria-controls="saerchform">
-		<i class="fas fa-search"></i>
-	</button>
- *
- */
-.navbar-collapse form .input-group > input {
-  padding-left: 0.5rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
-  .navbar-collapse form .input-group > input::-moz-placeholder {
-    font-size: 0.875rem; }
-  .navbar-collapse form .input-group > input::-webkit-input-placeholder {
-    font-size: 0.875rem; }
-  .navbar-collapse form .input-group > input:-ms-input-placeholder {
-    font-size: 0.875rem; }
-  .navbar-collapse form .input-group > input::placeholder {
-    font-size: 0.875rem; }
-.navbar-collapse form .input-group > span > button {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
+.p0 {
+  padding: 0 !important; }
 
-@media (min-width: 992px) {
-  .navbar-collapse form.show {
-    position: absolute;
-    margin-top: 45px;
-    top: 0;
-    right: 0; }
-    .navbar-collapse form.show .input-group > span > button {
-      border-style: solid;
-      border-width: 1px; } }
-.menu-primary #searchform {
-  display: block; }
-.menu-primary .btn-search-toggle {
-  display: none; }
+.pt0 {
+  padding-top: 0 !important; }
 
-@media (min-width: 992px) {
-  .menu-primary #searchform {
-    -moz-transition: opacity 0.1s ease-in-out;
-    -o-transition: opacity 0.1s ease-in-out;
-    -webkit-transition: opacity 0.1s ease-in-out;
-    transition: opacity 0.1s ease-in-out;
-    display: none;
-    opacity: 0; }
-    .menu-primary #searchform.show {
-      display: block;
-      opacity: 1; }
-  .menu-primary .btn-search-toggle {
-    display: block; } }
-/**
- * Module: Custom Social Widget
- *
- */
-.top-footer-social-links {
-  margin-bottom: 10px; }
-  .top-footer-social-links .widget {
-    margin: 0; }
+.pb0 {
+  padding-bottom: 0 !important; }
 
-.social_links {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center; }
-  .social_links > a {
-    font-size: 1.5rem;
-    padding: .5rem; }
-    .social_links > a svg path {
-      fill: #fff; }
-    .social_links > a:hover svg path {
-      fill: #ccc; }
+.pr0 {
+  padding-right: 0 !important; }
 
-@media (min-width: 768px) {
-  .top-footer-social-links {
-    margin-bottom: 0; }
+.pl0 {
+  padding-left: 0 !important; }
 
-  .social_links {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    -moz-justify-content: flex-end;
-    justify-content: flex-end; }
-    .social_links > a {
-      font-size: 0.875rem; } }
+.ptb0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+.prl0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+.m0 {
+  margin: 0 !important; }
+
+.mt0 {
+  margin-top: 0 !important; }
+
+.mt1 {
+  margin-top: 1rem !important; }
+
+.mt2 {
+  margin-top: 2rem !important; }
+
+.mb0 {
+  margin-bottom: 0 !important; }
+
+.mb1 {
+  margin-bottom: 1rem !important; }
+
+.mb2 {
+  margin-bottom: 2rem !important; }
+
+.ml0 {
+  margin-left: 0 !important; }
+
+.ml1 {
+  margin-left: 1rem !important; }
+
+.ml2 {
+  margin-left: 2rem !important; }
+
+.mr0 {
+  margin-right: 0 !important; }
+
+.mr1 {
+  margin-right: 1rem !important; }
+
+.mr2 {
+  margin-right: 2rem !important; }
+
+.ml0 {
+  margin-left: 0 !important; }
+
+.mtb0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+.mrl0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+.en {
+  font-family: "Roboto", sans-serif !important; }
+
+.kr {
+  font-family: "NanumBarunGothic", sans-serif !important; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -8910,6 +8809,9 @@ h2 {
 p {
   margin-bottom: 0; }
 
+.archive #secondary .widget-title {
+  font-size: 0.875rem; }
+
 @media (min-width: 768px) {
   body,
   button,
@@ -8920,7 +8822,29 @@ p {
     font-size: 0.875rem; }
 
   h2 {
-    font-size: 1.125rem; } }
+    font-size: 1.125rem; }
+
+  .archive .post .entry-title {
+    font-size: 0.75rem; }
+  .archive .post .entry-meta {
+    font-size: 0.75rem; }
+  .archive .post .card-bottom-wrapper {
+    font-size: 0.625rem; }
+  .archive #secondary .widget-title {
+    font-size: 0.75rem; }
+  .archive #secondary li a {
+    font-size: 0.75rem; } }
+@media (min-width: 1200px) {
+  .archive .post .entry-title {
+    font-size: 1rem; }
+  .archive .post .entry-meta {
+    font-size: 0.75rem; }
+  .archive .post .card-bottom-wrapper {
+    font-size: 0.6875rem; }
+  .archive #secondary .widget-title {
+    font-size: 1rem; }
+  .archive #secondary li a {
+    font-size: 0.875rem; } }
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
@@ -9096,6 +9020,148 @@ textarea {
 /*--------------------------------------------------------------
 # Theme
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Custom Elements
+--------------------------------------------------------------*/
+/**
+ * Module: Custom Bootstrap searchform
+ *
+ * Installation
+ *
+ * 1. add searchform.php to wp main folder
+ * 2. add <?php get_search_form(); ?> to php template
+ * 3. add below searchform toggle snippit to php template
+    <button class="btn btn-primary btn-search-toggle" type="button" data-toggle="collapse" data-target="#searchform" aria-expanded="false" aria-controls="saerchform">
+		<i class="fas fa-search"></i>
+	</button>
+ *
+ */
+.navbar-collapse form .input-group > input {
+  padding-left: 0.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+  .navbar-collapse form .input-group > input::-moz-placeholder {
+    font-size: 0.875rem; }
+  .navbar-collapse form .input-group > input::-webkit-input-placeholder {
+    font-size: 0.875rem; }
+  .navbar-collapse form .input-group > input:-ms-input-placeholder {
+    font-size: 0.875rem; }
+  .navbar-collapse form .input-group > input::placeholder {
+    font-size: 0.875rem; }
+.navbar-collapse form .input-group > span > button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+@media (min-width: 992px) {
+  .navbar-collapse form.show {
+    position: absolute;
+    margin-top: 45px;
+    top: 0;
+    right: 0; }
+    .navbar-collapse form.show .input-group > span > button {
+      border-style: solid;
+      border-width: 1px; } }
+.menu-primary #searchform {
+  display: block; }
+.menu-primary .btn-search-toggle {
+  display: none; }
+
+@media (min-width: 992px) {
+  .menu-primary #searchform {
+    -moz-transition: opacity 0.1s ease-in-out;
+    -o-transition: opacity 0.1s ease-in-out;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
+    display: none;
+    opacity: 0; }
+    .menu-primary #searchform.show {
+      display: block;
+      opacity: 1; }
+  .menu-primary .btn-search-toggle {
+    display: block; } }
+/**
+ * Module: Custom Social Widget
+ *
+ */
+.top-footer-social-links {
+  margin-bottom: 10px; }
+  .top-footer-social-links .widget {
+    margin: 0; }
+
+.social_links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
+  .social_links > a {
+    font-size: 1.5rem;
+    padding: .5rem; }
+    .social_links > a svg path {
+      fill: #fff; }
+    .social_links > a:hover svg path {
+      fill: #ccc; }
+
+@media (min-width: 768px) {
+  .top-footer-social-links {
+    margin-bottom: 0; }
+
+  .social_links {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end; }
+    .social_links > a {
+      font-size: 0.875rem; } }
+.header-banner {
+  position: relative;
+  margin-bottom: 20px; }
+  .header-banner a {
+    color: #fff; }
+  .header-banner p {
+    margin-bottom: 0; }
+  .header-banner .wrapper {
+    color: #fff; }
+    .header-banner .wrapper .header-banner-content {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      padding: 30px 10px; }
+      .header-banner .wrapper .header-banner-content .archive-description {
+        text-align: center;
+        font-weight: 300; }
+    .header-banner .wrapper > section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+      .header-banner .wrapper > section > img {
+        width: 100%;
+        height: 100%; }
+
+@media (min-width: 768px) {
+  .header-banner {
+    margin-bottom: 30px; } }
+@media (min-width: 768px) {
+  .header-banner {
+    margin-bottom: 45px; }
+    .header-banner .wrapper .header-banner-content {
+      padding: 45px 25px; } }
 .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
   font-size: 1rem;
   font-weight: 700;
@@ -9113,38 +9179,23 @@ textarea {
   .elementor-divider-separator {
     border-top-width: 6px !important;
     width: 8% !important; } }
-.archive article .entry-content {
-  display: none; }
-
-@media (max-width: 767.98px) {
-  #primary {
-    margin: 0; }
-    #primary #main {
-      margin: 0; }
-
-  #secondary {
-    width: 100%; } }
 #secondary #recent-posts-1 {
   border: 1px solid #e9e9e9; }
   #secondary #recent-posts-1 h2 {
     padding: .75rem;
     border-bottom: 1px solid #e9e9e9;
-    font-size: 1rem;
     font-weight: 700;
     background-color: #fafafa; }
-  #secondary #recent-posts-1 ul li {
-    padding: .75rem; }
-    #secondary #recent-posts-1 ul li a {
-      line-height: 1.5;
-      color: #2a2a2a; }
-      #secondary #recent-posts-1 ul li a:hover {
-        color: #ef512a; }
+  #secondary #recent-posts-1 ul li a {
+    line-height: 1.5;
+    color: #2a2a2a; }
+    #secondary #recent-posts-1 ul li a:hover {
+      color: #ef512a; }
 #secondary #custom_html-4 {
   border: 1px solid #e9e9e9; }
   #secondary #custom_html-4 h2 {
     padding: .75rem;
     border-bottom: 1px solid #e9e9e9;
-    font-size: 1rem;
     font-weight: 700;
     background-color: #fafafa; }
   #secondary #custom_html-4 .custom-html-widget {
@@ -9154,7 +9205,6 @@ textarea {
   #secondary #search-2 h2 {
     padding: .75rem;
     border-bottom: 1px solid #e9e9e9;
-    font-size: 1rem;
     font-weight: 700;
     background-color: #fafafa; }
   #secondary #search-2 form {
@@ -9183,43 +9233,44 @@ a {
 ## Post Navigation
 --------------------------------------------------------------*/
 .post-navigation {
-  width: 100%;
-  min-height: 1.5em;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 6em; }
+  width: 100%; }
+  .post-navigation .nav-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .post-navigation .nav-links .nav-previous {
+      padding: 15px;
+      margin-top: 15px;
+      flex-basis: 20%; }
+    .post-navigation .nav-links .nav-next {
+      padding: 15px;
+      margin-top: 15px;
+      flex-basis: 20%; }
+    .post-navigation .nav-links .title {
+      display: block; }
+    .post-navigation .nav-links .post-title {
+      display: block; }
+  .post-navigation .fa-chevron-left {
+    margin-right: 5px; }
+  .post-navigation .fa-chevron-right {
+    margin-left: 5px; }
 
-.nav-next {
-  float: right; }
-
-.nav-previous {
-  float: left;
-  margin-bottom: 1em; }
-
-.nav-next::after {
-  content: "→"; }
-
-.nav-previous::before {
-  content: "←"; }
-
-/* / */
-@media (min-width: 576px) {
-  .post-navigation {
-    max-width: 540px; } }
 @media (min-width: 768px) {
-  .post-navigation {
-    max-width: 720px; } }
-@media (min-width: 992px) {
-  .post-navigation {
-    max-width: 960px;
-    margin-bottom: 4em; } }
-@media (min-width: 1200px) {
-  .post-navigation {
-    max-width: 1140px;
-    margin-bottom: 5em; } }
-/* ----- /Single.php ----- */
+  .post-navigation .nav-links .nav-previous {
+    flex-basis: 40%; }
+  .post-navigation .nav-links .nav-next {
+    flex-basis: 40%; } }
 /*--------------------------------------------------------------
 ## Mobile Menu Type
 --------------------------------------------------------------*/
@@ -9492,28 +9543,34 @@ header #main-header .container nav {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.content-area {
-  float: left;
-  margin: 0 -25% 0 0;
-  width: 100%; }
+.site-content .widget-area ul {
+  padding: 5px 15px; }
+  .site-content .widget-area ul li {
+    margin-bottom: 5px; }
 
-.site-main {
-  margin: 0 25% 0 0; }
-
-.site-content .widget-area {
-  float: right;
-  overflow: hidden;
-  width: 25%; }
-
-.site-footer {
-  clear: both;
-  width: 100%; }
-
-.no-sidebar .content-area {
+@media (min-width: 768px) {
+  .site-content .content-area {
+    float: left;
+    margin: 0 -25% 0 0;
+    width: 100%; }
+    .site-content .content-area .site-main {
+      margin-top: 0;
+      margin-right: calc(( 100% - 30px ) * .25);
+      margin-bottom: 0;
+      margin-left: -15px;
+      padding-right: 15px; }
+  .site-content .widget-area {
+    float: right;
+    overflow: hidden;
+    width: 25%; }
+    .site-content .widget-area li {
+      padding: .5rem;
+      padding-bottom: 0; } }
+body:not(.has-sidebar) .content-area {
   float: none;
   margin-left: auto;
   margin-right: auto; }
-.no-sidebar .site-main {
+body:not(.has-sidebar) .site-main {
   margin-right: 0; }
 
 /*--------------------------------------------------------------
@@ -9555,12 +9612,45 @@ header #main-header .container nav {
 .home .entry-header {
   display: none; }
 
+.posts-navigation {
+  width: 100%; }
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
 /* ----- Main Home ----- */
 .page-id-6826 #content {
   padding-bottom: 0; }
+
+.single .content-area .post-thumbnail {
+  display: none; }
+.single .content-area .entry-header {
+  border: solid 1px #e9e9e9;
+  background-color: #fafafa; }
+.single .content-area .card-bottom-wrapper {
+  border-top-width: 0 !important;
+  border-bottom-width: 0 !important; }
+.single .content-area .entry-content {
+  padding: 15px;
+  border: solid 1px #e9e9e9;
+  background-color: #fafafa; }
+.single .post-navigation .nav-links .nav-previous {
+  border: 1px solid #e9e9e9;
+  background-color: #fafafa; }
+.single .post-navigation .nav-links .nav-next {
+  border: 1px solid #e9e9e9;
+  background-color: #fafafa; }
+.single .post-navigation .nav-links .title {
+  color: #ef512a; }
+
+.archive .post {
+  margin-bottom: 15px; }
+  .archive .post .post-thumbnail img {
+    width: 100%; }
+  .archive .post .entry-header .entry-meta {
+    overflow: hidden; }
+  .archive .post .entry-content {
+    display: none; }
 
 /* ----- page name ----- */
 .bg-1 img {
@@ -9603,22 +9693,60 @@ header #main-header .container nav {
   display: block; }
 
 /* ----- Theme Style ----- */
-.site-content .header-banner {
-  position: relative; }
-  .site-content .header-banner .wrapper {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    color: #fff;
-    transform: translate(-50%, -50%); }
-    .site-content .header-banner .wrapper .archive-title {
-      text-align: center; }
-    .site-content .header-banner .wrapper .archive-description {
-      text-align: center; }
-      .site-content .header-banner .wrapper .archive-description p {
-        margin-bottom: 0; }
+.site-content .header-banner a:hover {
+  color: #ef512a; }
+.site-content .header-banner .header-banner-content .page_description {
+  text-align: center; }
 .site-content .container #primary #main .page-header {
   display: none; }
+.site-content .container #primary #main article .entry-header {
+  padding: 15px;
+  border: solid 1px #e9e9e9;
+  border-bottom-width: 0; }
+  .site-content .container #primary #main article .entry-header .entry-meta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .site-content .container #primary #main article .entry-header .entry-meta .posted-on {
+      display: none; }
+    .site-content .container #primary #main article .entry-header .entry-meta .byline {
+      display: none; }
+    .site-content .container #primary #main article .entry-header .entry-meta p {
+      margin-bottom: 0; }
+.site-content .container #primary #main article .card-bottom-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 15px;
+  border: solid 1px #e9e9e9;
+  background-color: #fafafa; }
+  .site-content .container #primary #main article .card-bottom-wrapper img {
+    max-height: 15px;
+    margin-right: 5px; }
 
 .single .entry-content {
   margin-top: 0; }

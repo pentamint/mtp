@@ -15,6 +15,14 @@ h2 {
 p {
 	margin-bottom: 0;
 }
+// Post Category Pages
+.archive {
+	#secondary  {
+		.widget-title {
+			@include rfs(14);
+		}
+	}
+}
 @include media-breakpoint-up(sm) { // 576px and up
 
 }
@@ -30,12 +38,59 @@ p {
 	h2 {
 		@include rfs(18);
 	}
+	// Post Category Pages
+	.archive {
+		.post { // article
+		  .entry-title {
+			@include rfs(12);
+		  }
+		  .entry-meta {
+			@include rfs(12);
+		  }
+		  .card-bottom-wrapper {
+			  @include rfs(10);
+		  }
+		}
+		#secondary  {
+			.widget-title {
+				@include rfs(12);
+			}
+			li {
+				a {
+					@include rfs(12);
+				}
+			}
+		}
+	}
 }
 @include media-breakpoint-up(lg) { // 992px and up
 
 }
 @include media-breakpoint-up(xl) { // 1200px and up
-
+	// Post Category Pages
+	.archive {
+		.post { // article
+		  .entry-title {
+			@include rfs(16);
+		  }
+		  .entry-meta {
+			@include rfs(12);
+		  }
+		  .card-bottom-wrapper {
+			  @include rfs(11);
+		  }
+		}
+		#secondary  {
+			.widget-title {
+				@include rfs(16);
+			}
+			li {
+				a {
+					@include rfs(14);
+				}
+			}
+		}
+	}
 }
 
 @import "headings";

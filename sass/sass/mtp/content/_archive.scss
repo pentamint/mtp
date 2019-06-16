@@ -1,7 +1,25 @@
-.site-content {
+@import "single"; // single post page
 
+// ----- Archive ----- //
+.archive {
+  .post { // article
+    margin-bottom: 15px;
+    .post-thumbnail {
+      img {
+        width: 100%;
+      }
+    }
+    .entry-header {
+      .entry-meta {
+        overflow: hidden;
+      }
+    }
+    .entry-content {
+	  // hide post contents on category pages
+      display: none;
+    }
+  }
 }
-
 
 @include media-breakpoint-up(md) { // 768px and up
 
