@@ -7,6 +7,10 @@
     .entry-header {
         border: solid 1px #e9e9e9;
         background-color: #fafafa;
+        .entry-title {
+          @include rfs(18);
+          font-weight: 700;
+        }
     }
     .card-bottom-wrapper {
       border-top-width: 0 !important;
@@ -21,15 +25,117 @@
   .post-navigation {
     .nav-links {
       .nav-previous {
+        @include flex-basis(45%);
         border: 1px solid #e9e9e9;
         background-color: #fafafa;
       }
       .nav-next {
+        @include flex-basis(45%);
         border: 1px solid #e9e9e9;
         background-color: #fafafa;
       }
       .title {
+        display: block;
         color: #ef512a;
+      }
+      .post-title {
+        display: none;
+      }
+    }
+  }
+  .comments-area {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    .comments-title {
+      @include flex-basis(100%);
+      @include order(2);
+      margin-top: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e9e9e9;
+    }
+    .comment-list {
+      @include flex-basis(100%);
+      @include order(3);
+      margin-bottom: 20px;
+      .comment-body {
+        @include flexbox;
+        @include flex-wrap(wrap);
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e9e9e9;
+      }
+      .comment-meta {
+        @include flex-basis(50%);
+        margin-bottom: 10px;
+        .comment-author {
+          color: #ef512a;
+        }
+        .comment-metadata {
+          display: none;
+        }
+      }
+      .comment-content {
+        @include flex-basis(100%);
+        @include order(3);
+        margin-bottom: 5px;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      .reply {
+        @include flex-basis(50%);
+        @include order(2);
+        color: #ef512a;
+        text-align: right;
+      }
+    }
+    .comment-respond {
+      @include flex-basis(100%);
+      @include order(1);
+      margin-top: 15px;
+      .comment-reply-title {
+        @include rfs(18);
+        font-weight: 700;
+      }
+      form {
+        .submit { // button
+          width: 100%;
+          padding: 20px;
+          font-size: 18px;
+          font-weight: 700;
+          border-radius: 0;
+          background-color: #ef512a;
+          color: #fff;
+          border-color: #ef512a;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .single {
+    .content-area {
+      .comment-respond {
+        form {
+          .submit {
+            width: 40%;
+          }
+        }
+      }
+    }
+    .post-navigation {
+      .nav-links {
+        .nav-previous {
+
+        }
+        .nav-next {
+
+        }
+        .title {
+
+        }
+        .post-title {
+          display: block;
+        }
       }
     }
   }

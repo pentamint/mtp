@@ -221,9 +221,11 @@
 .btn.btn-primary { // button
   background-color: $secondary-color;
   border-color: $secondary-color;
+  color: $font-color;
   &:hover {
     background-color: $primary-color;
     border-color: $primary-color;
+    color: $font-color-ng;
     .fa-search {
       > path {
         fill: $font-color-ng-ac;

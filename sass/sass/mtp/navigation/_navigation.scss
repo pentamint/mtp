@@ -156,3 +156,8 @@ header { // #masthead .site-header
   }
 }
 
+@include media-breakpoint-up($breakpoint__mobile-nav)  {
+  .m-register, .m-login, .m-profile, .m-logout {
+    display: none;
+  }
+}

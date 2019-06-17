@@ -16,6 +16,7 @@ body.has-sidebar {
 		#primary {
 			@include flexbox;
 			#main {
+				padding-right: 20px;
 				@include flex-basis(75%);
 			}
 			#secondary {

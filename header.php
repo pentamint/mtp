@@ -34,8 +34,6 @@
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 	<script src="https://kit.fontawesome.com/ec23c08cf8.js"></script>
 
 
