@@ -1,22 +1,28 @@
-.content-area {
-	float: right;
-	margin: 0 0 0 (-$size__site-sidebar);
-	width: $size__site-main;
+body.has-sidebar {
+	#primary {
+		@include flexbox;
+		@include flex-wrap(wrap);
+		#main {
+			@include flex-basis(100%);
+		}
+		#secondary {
+			@include flex-basis(100%);
+		}
+	}
 }
 
-.site-main {
-	margin: 0 0 0 $size__site-sidebar;
+@include media-breakpoint-up(md) {
+	body.has-sidebar {
+		#primary {
+			@include flexbox;
+			#main {
+				@include flex-basis(75%);
+				@include order(2);
+			}
+			#secondary {
+				@include flex-basis(25%);
+				@include order(1);
+			}
+		}
+	}
 }
-
-.site-content .widget-area {
-	float: left;
-	overflow: hidden;
-	width: $size__site-sidebar;
-}
-
-.site-footer {
-	clear: both;
-	width: $size__site-main;
-}
-
-@import "no-sidebar";
