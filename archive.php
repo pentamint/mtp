@@ -38,7 +38,7 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
-			<?php
+		<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -66,7 +66,6 @@ get_header();
 		<?php get_sidebar(); ?>
 
 	</div><!-- #primary -->
-</div><!-- .container -->
 
 <?php
 get_footer();
