@@ -34,6 +34,9 @@
 header { // #masthead .site-header
   #main-header {
     .container {
+      #mobile-header-widget-1 {
+        
+      }
       nav { // .navbar-primary .navbar
         // 1st depth menu item font size
         @include rfs(14);
@@ -92,6 +95,10 @@ header { // #masthead .site-header
         nav { // .navbar-primary .navbar
           .nav-wrapper {
             .navbar-collapse { // .menu-primary
+              #searchform {
+                display: block;
+                opacity: 1;
+              }
               > ul { // #menu-primary-menu .navbar-nav
                 // reset bootstrap default menu direction column to row
                 @include flex-direction(row);

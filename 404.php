@@ -10,6 +10,23 @@
 get_header();
 ?>
 
+	<!-- Custom Code -->
+	<?php if ( is_active_sidebar ( 'fullwidth-header-banner' ) ) : ?>
+		<div class="header-widget header-banner" role="complementary">
+			<div class="wrapper container">
+				<div class="header-banner-content row">
+					<h2 class="archive-title">
+						<?php $category = get_the_category(); echo $category[0]-> cat_name; ?>
+					</h2>
+					<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
+				</div>
+				<?php dynamic_sidebar ( 'fullwidth-header-banner' ); ?>
+			</div>
+		</div>
+	<?php endif; ?>
+	<!-- Custom Code -->
+
+<div class="container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -55,6 +72,7 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div><!-- .container -->
 
 <?php
 get_footer();

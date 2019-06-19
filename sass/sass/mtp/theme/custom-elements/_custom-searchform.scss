@@ -35,19 +35,17 @@
 @include media-breakpoint-up($breakpoint__mobile-nav) {
   .navbar-collapse { // .menu-primary
     form { // #searchform
-      &.show {
-        // position searchform below header
-        position: absolute;
-        margin-top: 45px;
-        // IE fix
-        top: 0;
-        right: 0;
-        .input-group {
-          > span { // .input-group-btn
-            > button { // floating button
-              border-style: solid;
-              border-width: 1px;
-            }
+      // position searchform below header
+      // position: absolute;
+      // margin-top: 45px;
+      // IE fix
+      top: 0;
+      right: 0;
+      .input-group {
+        > span { // .input-group-btn
+          > button { // floating button
+          border-style: solid;
+          border-width: 1px;
           }
         }
       }
@@ -82,7 +80,7 @@
     }
     // show on PC
     .btn-search-toggle {
-      display: block;
+      // display: block;
     }
   }
 }

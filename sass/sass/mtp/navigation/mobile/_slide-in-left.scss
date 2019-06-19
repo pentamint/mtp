@@ -82,7 +82,7 @@ header { // #masthead .site-header
                     // unset mobile navbar settings
                     position: inherit;
                     top: inherit;
-                    @include justify-content(flex-end);
+                    @include justify-content(flex-start);
                     .nav-wrapper {
                         >button { // .hamburger .navbar-toggle
                             display: none;

@@ -9051,12 +9051,10 @@ textarea {
   border-bottom-left-radius: 0; }
 
 @media (min-width: 992px) {
-  .navbar-collapse form.show {
-    position: absolute;
-    margin-top: 45px;
+  .navbar-collapse form {
     top: 0;
     right: 0; }
-    .navbar-collapse form.show .input-group > span > button {
+    .navbar-collapse form .input-group > span > button {
       border-style: solid;
       border-width: 1px; } }
 .menu-primary #searchform {
@@ -9074,9 +9072,7 @@ textarea {
     opacity: 0; }
     .menu-primary #searchform.show {
       display: block;
-      opacity: 1; }
-  .menu-primary .btn-search-toggle {
-    display: block; } }
+      opacity: 1; } }
 /**
  * Module: Custom Social Widget
  *
@@ -9317,11 +9313,11 @@ header #main-header .container nav {
   header #main-header .container nav {
     position: inherit;
     top: inherit;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    -moz-justify-content: flex-end;
-    justify-content: flex-end; }
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start; }
     header #main-header .container nav .nav-wrapper > button {
       display: none; }
     header #main-header .container nav .nav-wrapper .navbar-collapse {
@@ -9345,15 +9341,17 @@ header #main-header .container nav {
   #mobile-header-widget-1 {
     display: block;
     position: absolute;
-    top: 50%;
-    transform: translateY(-40%);
     left: 0;
     margin-left: 1rem; }
     #mobile-header-widget-1 a .svg-inline--fa {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+    #mobile-header-widget-1 img {
+      width: 109px; } }
 @media (min-width: 992px) {
   #mobile-header-widget-1 {
-    display: none; } }
+    display: none;
+    top: 50%;
+    transform: translateY(-40%); } }
 /*--------------------------------------------------------------
 ## Mobile Menu Design
 --------------------------------------------------------------*/
@@ -9420,6 +9418,9 @@ header #main-header .container nav {
         padding: 0.28rem 0.75rem;
         font-size: 0.75rem;
         font-weight: 700; }
+  header #main-header .container nav .nav-wrapper .navbar-collapse #searchform {
+    display: block;
+    opacity: 1; }
   header #main-header .container nav .nav-wrapper .navbar-collapse > ul {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
@@ -10151,64 +10152,68 @@ body.has-sidebar #primary {
   .site-header.sticky #top-header {
     display: none; }
 
-  #top-header .container #header-widget-1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
+  #top-header .container {
+    height: 125px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center;
-    margin-left: 110px;
-    width: 100%; }
-    #top-header .container #header-widget-1 .widget .textwidget p {
-      display: block;
-      font-size: 0.6875rem;
-      font-weight: 900;
-      margin-bottom: 0;
-      margin-top: .2rem; }
-  #top-header .container nav {
-    width: 100%;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    -moz-justify-content: flex-end;
-    justify-content: flex-end; }
-    #top-header .container nav .nav-wrapper .navbar-collapse {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      #top-header .container nav .nav-wrapper .navbar-collapse > ul > li:not(:first-child):before {
-        display: block;
-        position: absolute;
-        top: 13px;
-        right: 60px;
-        width: 1px;
-        height: .5rem;
-        content: ''; }
+    border-bottom: 1px solid #e9e9e9; }
+    #top-header .container .site-branding {
+      -webkit-flex-basis: 15%;
+      -moz-flex-basis: 15%;
+      -ms-flex-preferred-size: 15%;
+      flex-basis: 15%; }
+      #top-header .container .site-branding .site-title, #top-header .container .site-branding .site-description {
+        display: none; }
+    #top-header .container #searchform {
+      -webkit-flex-basis: 60%;
+      -moz-flex-basis: 60%;
+      -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+      padding-left: 20px; }
+      #top-header .container #searchform .form-control {
+        border: 1px solid #ef512a; }
+      #top-header .container #searchform .input-group-btn .btn-primary {
+        background-color: #ef512a;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 100%; }
+        #top-header .container #searchform .input-group-btn .btn-primary .fa-search {
+          color: #fff; }
+    #top-header .container .navbar-secondary {
+      -webkit-flex-basis: 25%;
+      -moz-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%; }
 
-  body.logged-in #top-header .container .navbar-secondary .nav-wrapper .menu-secondary .navbar-nav li:not(:first-child):before {
+  #main-header .container {
+    height: 60px; }
+    #main-header .container nav {
+      width: 100%;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      justify-content: flex-start; }
+      #main-header .container nav .nav-wrapper .navbar-collapse {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        #main-header .container nav .nav-wrapper .navbar-collapse > ul > li:not(:first-child):before {
+          display: block;
+          position: absolute;
+          top: 13px;
+          right: 60px;
+          width: 1px;
+          height: .5rem;
+          content: ''; }
+
+  body.logged-in #main-header .container .navbar-secondary .nav-wrapper .menu-secondary .navbar-nav li:not(:first-child):before {
     right: 69px; } }
-#top-header .container {
-  height: 0; }
-
-@media (min-width: 576px) {
-  #top-header .container {
-    height: 0; } }
-@media (min-width: 768px) {
-  #top-header .container {
-    height: 0; } }
-@media (min-width: 992px) {
-  #top-header .container {
-    height: 35px; } }
-@media (min-width: 1200px) {
-  #top-header .container {
-    height: 35px; } }
 /* ----- Theme ----- */
 .site-branding {
   padding: 5px;

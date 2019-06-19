@@ -26,29 +26,47 @@
     // --- Widget left text widget design --- //
     #top-header {
         .container {
-            // Left widget text
-            #header-widget-1 {
-                @include flexbox;
-                @include align-items(center);
-                margin-left: 110px; // widget positioning
-                width: 100%; // extend to 50%
-                .widget {
-                    .textwidget {
-                        p {
-                            display: block;
-                            @include rfs(11);
-                            font-weight: 900;
-                            margin-bottom: 0;
-                            margin-top: .2rem; 
+            height: 125px;
+            @include align-items(center);
+            border-bottom: 1px solid #e9e9e9;
+            .site-branding {
+                @include flex-basis(15%);
+                .site-title, .site-description {
+                    display: none;
+                }
+            }
+            #searchform {
+                @include flex-basis(60%);
+                padding-left: 20px;
+                .form-control {
+                    border: 1px solid #ef512a;
+                }
+                .input-group-btn {
+                    .btn-primary {
+                        background-color: #ef512a;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        height: 100%;
+                        .fa-search {
+                            color: #fff;
                         }
                     }
                 }
             }
+            // Left widget text
+            .navbar-secondary {
+                @include flex-basis(25%);
+            }
+        }
+    }
+    #main-header {
+        .container {
+            height: 60px;
             // right widget secondary nav
             nav { // .navbar, .navbar-secondary
                 width: 100%;
                 // top header nav align right
-                @include justify-content(flex-end);
+                @include justify-content(flex-start);
                 .nav-wrapper {
                     .navbar-collapse { //  .menu-secondary
                         // display none reset
@@ -69,41 +87,41 @@
                         }
                     }
                 }
-            }
+            }            
         }
     }
     // Secondary nav divider login pos
-    body.logged-in #top-header .container .navbar-secondary .nav-wrapper .menu-secondary .navbar-nav li:not(:first-child):before {
+    body.logged-in #main-header .container .navbar-secondary .nav-wrapper .menu-secondary .navbar-nav li:not(:first-child):before {
         right: 69px;
     }
 }
 
-// ----- Responsive top header height
-// Top header xs height
-#top-header .container {
-    height: $height__xs-top-header;
-}
-@include media-breakpoint-up(sm) {
-    // top header height
-    #top-header .container {
-        height: $height__sm-top-header;
-    }
-}
-@include media-breakpoint-up(md) {
-    // top header height
-    #top-header .container {
-        height: $height__md-top-header;
-    }
-}
-@include media-breakpoint-up(lg) {
-    // top header height
-    #top-header .container {
-        height: $height__lg-top-header;
-    }
-}
-@include media-breakpoint-up(xl) {
-    // top header height
-    #top-header .container {
-        height: $height__xl-top-header;
-    }
-}
+// // ----- Responsive top header height
+// // Top header xs height
+// #top-header .container {
+//     height: $height__xs-top-header;
+// }
+// @include media-breakpoint-up(sm) {
+//     // top header height
+//     #top-header .container {
+//         height: $height__sm-top-header;
+//     }
+// }
+// @include media-breakpoint-up(md) {
+//     // top header height
+//     #top-header .container {
+//         height: $height__md-top-header;
+//     }
+// }
+// @include media-breakpoint-up(lg) {
+//     // top header height
+//     #top-header .container {
+//         height: $height__lg-top-header;
+//     }
+// }
+// @include media-breakpoint-up(xl) {
+//     // top header height
+//     #top-header .container {
+//         height: $height__xl-top-header;
+//     }
+// }

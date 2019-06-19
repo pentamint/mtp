@@ -3,8 +3,8 @@
         display: block;
         position: absolute;
         // IE Fix
-        top: 50%;
-        transform: translateY(-40%);
+        // top: 50%;
+        // transform: translateY(-40%);
         //
         left: 0;
         margin-left: 1rem;
@@ -13,11 +13,18 @@
                 @include rfs(32);
             }
         }
+        img {
+            width: 109px;
+        }
     }
 }
 
 @include media-breakpoint-up($breakpoint__mobile-nav) {
     #mobile-header-widget-1 {
         display: none;
+        // IE Fix
+        top: 50%;
+        transform: translateY(-40%);
+        //
     }
 }

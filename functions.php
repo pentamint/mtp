@@ -210,7 +210,6 @@ function mtp_scripts() {
 
 	/** Custom Scripts **/
 	// Bootstrap Support
-	wp_enqueue_script( 'jQuery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', array(), null, true );
 	wp_enqueue_script( 'popper.js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), null, true );
 	wp_enqueue_script( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), null, true );	
 	// Theme Custom
@@ -263,12 +262,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-
-// Enqueueing Google Fonts
-function custom_add_google_fonts() {
- wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700', false );
-}
-add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
 
 // ----- Register Custom Menu ----- //
 
