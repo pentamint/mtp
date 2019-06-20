@@ -117,7 +117,7 @@ function mtp_widgets_init() {
 	) );
 	// Top header left tagline area
 	register_sidebar( array(
-		'name'          => 'Top Header Left Widget', 'mtp',
+		'name'          => 'Top Header Right Widget', 'mtp',
 		'id'            => 'top-header-widget-1',
 		'description'   => 'Add widgets here.', 'mtp',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',

@@ -33,8 +33,24 @@
 }
 
 @include media-breakpoint-up($breakpoint__mobile-nav) {
-  // Logo PC positioning
-  .site-branding {
-    margin-top: -35px;
+  #header-widget-1 {
+    .widget {
+      img {
+        max-height: 124px;
+        object-fit: contain;
+        font-family: 'object-fit: contain;';
+      }
+    }
+  }
+  #main-header {
+    .container {
+      @include flexbox;
+      .navbar-primary {
+        @include flex-basis(80%);
+      }
+      .navbar-secondary {
+        @include flex-basis(20%);
+      }
+    }
   }
 }

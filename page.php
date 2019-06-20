@@ -20,10 +20,10 @@ get_header();
 		<div class="header-widget header-banner" role="complementary">
 			<div class="wrapper container">
 				<div class="header-banner-content row">
-					<h2 class="archive-title">
-						<?php $category = get_the_category(); echo $category[0]-> cat_name; ?>
-					</h2>
-					<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
+					<?php the_title( '<h2 class="page-title">', '</h2>' ); ?>
+					<div class="page_description">
+						<span>먹튀폴리스는 철저한 검증을 토대로 악덕 먹튀사이트를 고발하고 2차피해를 방지하기위해 최선을 다하고 있습니다. 사용 중 먹튀 피해를 당하셨다면사이트 제보 및 신고 부탁 드립니다. 먹튀제보를 통하여 토토사이트 이용법에 대한 올바른 상담 및, 위로금 등을 지급받으실 수 있습니다. 제보 시, 반드시 공지사항에 먹튀제보방법 을 참고하여 제보해주시기 바랍니다.</span>
+					</div>
 				</div>
 				<?php dynamic_sidebar ( 'fullwidth-header-banner' ); ?>
 			</div>

@@ -9,8 +9,14 @@
 
 }
 
-// --- Row 2 notice & promo ---
- 
+// --- Row 2 Promo Bars 3 Col ---
+.banner-links {
+  .elementor-image {
+    a {
+      display: block !important; // IE Fix //
+    }
+  }
+}
 
 // --- Row 3 toggle promo ---
 

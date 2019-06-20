@@ -80,9 +80,40 @@
 	}
 }
 
-.single .entry-content {
-	margin-top: 0;
+// --- Single --- //
+.single {
+	article { // post
+		.entry-header {
+			.entry-meta {
+				display: none !important;
+			}
+		}
+		.entry-content {
+			margin-top: 0;
+			@include rfs(16);
+		}
+	}
 }
+
+// --- Page --- //
+.page {
+	.site-content {
+		.content-area { // #primary
+			.site-main { // #main
+				article {
+					.entry-header {
+						display: none;
+					}
+					.post-thumbnail {
+						text-align: center;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
 @include media-breakpoint-up($breakpoint__mobile-nav) {
 	// all posts & pages spacing bottom
 	.site-content {

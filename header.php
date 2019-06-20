@@ -62,27 +62,14 @@
 				</div><!-- .site-branding -->
 
 				<?php get_search_form(); ?>
-				
-				<nav class="navbar navbar-secondary" role="navigation">
-					<div class="nav-wrapper">
-						<div class="collapse navbar-collapse menu-secondary" id="top-navbar-collapse-1">
-							<?php
-								wp_nav_menu( array(
-									'menu'           	=> '',
-									'theme_location'    => 'secondary',
-									'depth'             => 2,
-									'container'         => '',
-									'container_class'   => 'collapse navbar-collapse',
-									'container_id'      => 'top-navbar-collapse-1',
-									'menu_class'        => 'nav navbar-nav',
-									'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-									'walker'            => new wp_bootstrap_navwalker())
-								);
-							?>
-						</div><!-- .navbar-colapse -->
-					</div><!-- .nav-wrapper -->
-				</nav><!-- .navbar -->
 
+				<?php if ( is_active_sidebar ( 'top-header-widget-1' ) ) : ?>
+					<!-- #header-widget-1 -->
+					<div id="header-widget-1" class="header-widget widget-area" role="complementary">
+						<?php dynamic_sidebar ( 'top-header-widget-1' ); ?>
+					</div>
+				<?php endif; ?>
+				
 			</div><!-- .container -->
 		</div><!-- #top-header -->
 
@@ -96,7 +83,7 @@
 					</div>
 				<?php endif; ?>
 
-				<!-- #site-navigation -->
+				<!-- Primary Menu -->
 				<nav class="navbar navbar-default navbar-primary" role="navigation">
 					<div class="nav-wrapper">
 						<!-- Brand and toggle get grouped for better mobile display -->
@@ -126,6 +113,27 @@
 							</button>
 							<div class="menu-overlay"></div>
 						</div><!-- navbar-colapse -->
+					</div><!-- .nav-wrapper -->
+				</nav><!-- .navbar -->
+
+				<!-- Secondary Menu -->
+				<nav class="navbar navbar-secondary" role="navigation">
+					<div class="nav-wrapper">
+						<div class="collapse navbar-collapse menu-secondary" id="top-navbar-collapse-1">
+							<?php
+								wp_nav_menu( array(
+									'menu'           	=> '',
+									'theme_location'    => 'secondary',
+									'depth'             => 2,
+									'container'         => '',
+									'container_class'   => 'collapse navbar-collapse',
+									'container_id'      => 'top-navbar-collapse-1',
+									'menu_class'        => 'nav navbar-nav',
+									'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+									'walker'            => new wp_bootstrap_navwalker())
+								);
+							?>
+						</div><!-- .navbar-colapse -->
 					</div><!-- .nav-wrapper -->
 				</nav><!-- .navbar -->
 
