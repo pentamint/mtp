@@ -8,6 +8,11 @@
 // Fullwidth Posts & Pages Header Banner
 @import "custom-elements/custom-page-header-banner";
 
+/*--------------------------------------------------------------
+# Custom Rows
+--------------------------------------------------------------*/
+@import "custom-rows/home-recent-post-4col";
+
 
 // --- Elementor Settings --- //
 // - Typography - //
@@ -37,7 +42,7 @@
 
 // --- Module Settings --- //
 
-// - Design - //
+// - Sidebar Design - //
 #secondary {
   #recent-posts-1 {
     border: 1px solid #e9e9e9;

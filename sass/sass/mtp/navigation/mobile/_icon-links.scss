@@ -1,13 +1,5 @@
 @include media-breakpoint-down(md) {
     #mobile-header-widget-1 {
-        display: block;
-        position: absolute;
-        // IE Fix
-        // top: 50%;
-        // transform: translateY(-40%);
-        //
-        left: 0;
-        margin-left: 1rem;
         a {
             .svg-inline--fa {
                 @include rfs(32);
@@ -22,9 +14,5 @@
 @include media-breakpoint-up($breakpoint__mobile-nav) {
     #mobile-header-widget-1 {
         display: none;
-        // IE Fix
-        top: 50%;
-        transform: translateY(-40%);
-        //
     }
 }

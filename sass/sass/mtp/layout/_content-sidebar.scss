@@ -23,6 +23,7 @@ body.has-sidebar {
 			}
 			#secondary {
 				@include flex-basis(25%);
+				max-width: 25%;
 			}
 		}
 	}
