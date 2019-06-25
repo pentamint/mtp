@@ -96,8 +96,7 @@ header { // #masthead .site-header
           .nav-wrapper {
             .navbar-collapse { // .menu-primary
               #searchform {
-                display: block;
-                opacity: 1;
+                display: none;
               }
               > ul { // #menu-primary-menu .navbar-nav
                 // reset bootstrap default menu direction column to row

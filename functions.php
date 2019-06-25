@@ -195,6 +195,126 @@ function mtp_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	// 안전놀이터 1
+	register_sidebar( array(
+		'name'          => '안전놀이터 1', 'mtp',
+		'id'            => 'trusted-site-1',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 안전놀이터 2
+	register_sidebar( array(
+		'name'          => '안전놀이터 2', 'mtp',
+		'id'            => 'trusted-site-2',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 안전놀이터 3
+	register_sidebar( array(
+		'name'          => '안전놀이터 3', 'mtp',
+		'id'            => 'trusted-site-3',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 안전놀이터 4
+	register_sidebar( array(
+		'name'          => '안전놀이터 4', 'mtp',
+		'id'            => 'trusted-site-4',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 먹튀사이트 1
+	register_sidebar( array(
+		'name'          => '먹튀사이트 1', 'mtp',
+		'id'            => 'rogue-site-1',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 먹튀사이트 2
+	register_sidebar( array(
+		'name'          => '먹튀사이트 2', 'mtp',
+		'id'            => 'rogue-site-2',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 먹튀사이트 3
+	register_sidebar( array(
+		'name'          => '먹튀사이트 3', 'mtp',
+		'id'            => 'rogue-site-3',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 먹튀사이트 4
+	register_sidebar( array(
+		'name'          => '먹튀사이트 4', 'mtp',
+		'id'            => 'rogue-site-4',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+		// 스포츠분석 1
+	register_sidebar( array(
+		'name'          => '스포츠분석 1', 'mtp',
+		'id'            => 'sports-analysis-1',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 스포츠분석 2
+	register_sidebar( array(
+		'name'          => '스포츠분석 2', 'mtp',
+		'id'            => 'sports-analysis-2',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 스포츠분석 3
+	register_sidebar( array(
+		'name'          => '스포츠분석 3', 'mtp',
+		'id'            => 'sports-analysis-3',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	// 스포츠분석 4
+	register_sidebar( array(
+		'name'          => '스포츠분석 4', 'mtp',
+		'id'            => 'sports-analysis-4',
+		'description'   => 'Add widgets here.', 'mtp',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'mtp_widgets_init' );
 
@@ -208,6 +328,7 @@ function mtp_scripts() {
 
 	wp_enqueue_script( 'mtp-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script('jquery');
 	/** Custom Scripts **/
 	// Bootstrap Support
 	wp_enqueue_script( 'popper.js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), null, true );

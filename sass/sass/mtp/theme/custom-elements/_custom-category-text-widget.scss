@@ -1,0 +1,18 @@
+.content-widget {
+    margin: 3% 0;
+    section {
+        border: 1px solid #e9e9e9;
+        .widget-title {
+            padding: .75rem;
+            border-bottom: 1px solid #e9e9e9;
+            @include rfs(16);
+            background-color: #fafafa;
+        }
+        .textwidget {
+            padding: .75rem .75rem 1rem;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

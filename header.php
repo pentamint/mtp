@@ -95,6 +95,7 @@
 						</button>
 						<div class="collapse navbar-collapse menu-primary" id="navbar-collapse-1">
 							<?php
+							get_search_form();
 							wp_nav_menu( array(
 								'menu'           	=> '',
 								'theme_location'    => 'primary',
