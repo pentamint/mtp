@@ -1,3 +1,13 @@
+// Archive Pagination
+.navigation.pagination {
+  @include justify-content(flex-end);
+  .nav-links {
+    .page-numbers {
+      border: 1px solid #000;
+      padding: 5px 10px;
+    }
+  }
+}
 // Post navigation
 .post-navigation {
   width: 100%;
@@ -28,6 +38,15 @@
   .fa-chevron-right {
     margin-right: 5px;
   }
+  .pagination {
+    @include justify-content(flex-end);
+    .nav-links {
+      .page-numbers {
+        border: 1px solid #000;
+        padding: 5px 10px;
+      }
+    }
+  }
 }
 @include media-breakpoint-up(md) {
   .post-navigation {
@@ -39,15 +58,6 @@
       .nav-next {
         flex-basis: 40%;
         max-width: 40%;
-      }
-    }
-  }
-  .pagination {
-    @include justify-content(flex-end);
-    .nav-links {
-      .page-numbers {
-        border: 1px solid #000;
-        padding: 5px 10px;
       }
     }
   }

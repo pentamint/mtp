@@ -1,0 +1,212 @@
+/* ---------------------------------------------------------------------------
+ * 커스텀 fix ( 지우지 마세요 )
+** --------------------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+ * Cross Browser Patch
+** ------------------------------------------------------------- */
+
+.lazyload, .lazyloading {
+  opacity: 1 !important; /* IE Lazyloading not working fix */
+}
+
+/*--------------------------------------------------------------
+ * Default
+** ------------------------------------------------------------- */
+html, body, button, input, select, textarea, .elementor-text-editor, .navbar a {
+	font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', '맑은 고딕', 'malgun gothic', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic',  'Droid sans', sans-serif !important;
+}
+
+.fa, .fas, .fab {
+  font-family: FontAwesome !important;
+  font-style: normal;
+}
+.fa-sign-in-alt::before, .fa-sign-out-alt::before {
+  content: "\f08b";
+}
+.fa-linkedin-in::before {
+  content: "\f0e1";
+}
+.fa-medium-m::before {
+  content: "\f23a";
+}
+
+
+/*--------------------------------------------------------------
+ * Home
+** ------------------------------------------------------------- */
+/* .home .post-thumbnail {
+  display: none;
+} */
+
+
+/*--------------------------------------------------------------
+ * Single
+** ------------------------------------------------------------- */
+.entry-content p {
+  font-size: 1.1em;
+  line-height: 1.9;
+}
+
+
+/*--------------------------------------------------------------
+ * 카테고리 공통
+** ------------------------------------------------------------- */
+.archive .post-thumbnail img {
+  max-height: 187px;
+}
+.archive .entry-title {
+  height: 38px;
+  overflow: hidden;
+}
+.archive .entry-meta {
+  height: 105px;
+  overflow: hidden;
+}
+
+/* https://www.mt-police.com/livescore/livescore/ */
+@media only screen and (min-width: 1200px) {
+  .page-id-12058.has-sidebar .container {
+    max-width: 75%; /* 1260px */
+  }
+}
+
+
+/*--------------------------------------------------------------
+ * 공지사항, 먹폴픽방 => 스포츠분석
+** ------------------------------------------------------------- */
+.category-28 .site-main .row, .category-166 .site-main .row {
+  display: block;
+  margin-bottom: 40px;
+}
+.category-28 .post, .category-166 .post {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.bbs_head, .bbs_body {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid #4e4e4e;
+}
+.bbs_li {
+  list-style-type: none;
+  float: left;
+  padding: 10px;
+  border-right: 1px solid #4e4e4e;
+  text-align: center;
+  height: 39px;
+}
+
+.bbs_title {
+  width: 70%;
+}
+.bbs_author {
+  width: 15%;
+}
+.bbs_date {
+  width: 15%;
+  border-right: none;
+}
+
+.category-28 .oceanwp-row, .category-166 .oceanwp-row {
+  margin: 0;
+}
+.bbs_body .entry-title, .recent-title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: left;
+  display: block;
+  width: 99%;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-wrap:normal;
+  overflow:hidden;
+}
+/* home > 최신글 */
+.recent-title {
+  margin-bottom: 5px;
+}
+.recent-title a {
+  color: #fff;
+}
+
+.bbs_body {
+  border-bottom: none;
+}
+.post:last-child .bbs_body {
+  border-bottom: 1px solid #4e4e4e;
+}
+
+/* 설명 */
+/* .category-28 .tax-desc, .category-166 .tax-desc {
+  position: absolute;
+  top: -51px;
+  left: 0;
+  height: 50px;
+  overflow: hidden;
+} */
+
+/* 먹폴 픽방 tag 분류 */
+.tab-btn-wrap {
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  background-color: #3E3E3E;
+}
+.tab-btn {
+  float: left;
+  padding: 5px 15px;
+  border-right: 1px solid #3c3c3d;
+  cursor: pointer;
+  color: #fff;
+  background-color: #e3e3e3;
+  /* background: radial-gradient(ellipse at center, rgb(73, 73, 73) 0%, rgb(79, 79, 79) 56%, rgb(77, 77, 77) 100%); */
+}
+.tab-btn.active, .tab-btn:hover {
+  box-shadow: inset 0px -2px 0px 0px #cb2027;
+  font-weight: bold;
+  background: #2e2e2e;
+  color: #c6c6c6;
+}
+.tab-btn.active > a {
+  color: #fff;
+}
+
+/* 카테고리 배너 */
+.cat-banner {
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+/*--------------------------------------------------------------
+ * 카테고리 공통
+** ------------------------------------------------------------- */
+.error-404 #searchform {
+  margin-bottom: 40px;
+}
+.error-404 .btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+ * 반응형
+** ------------------------------------------------------------- */
+@media only screen and (max-width: 580px) {
+  .archive .post-thumbnail img {
+    max-height: 300px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .bbs_author {
+    display: none;
+  }
+  .bbs_date {
+    width: 30%;
+  }
+}

@@ -9311,6 +9311,16 @@ a {
 /*--------------------------------------------------------------
 ## Post Navigation
 --------------------------------------------------------------*/
+.navigation.pagination {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end; }
+  .navigation.pagination .nav-links .page-numbers {
+    border: 1px solid #000;
+    padding: 5px 10px; }
+
 .post-navigation {
   width: 100%; }
   .post-navigation .nav-links {
@@ -9344,6 +9354,15 @@ a {
     margin-right: 5px; }
   .post-navigation .fa-chevron-right {
     margin-right: 5px; }
+  .post-navigation .pagination {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end; }
+    .post-navigation .pagination .nav-links .page-numbers {
+      border: 1px solid #000;
+      padding: 5px 10px; }
 
 @media (min-width: 768px) {
   .post-navigation .nav-links .nav-previous {
@@ -9351,17 +9370,7 @@ a {
     max-width: 40%; }
   .post-navigation .nav-links .nav-next {
     flex-basis: 40%;
-    max-width: 40%; }
-
-  .pagination {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    -moz-justify-content: flex-end;
-    justify-content: flex-end; }
-    .pagination .nav-links .page-numbers {
-      border: 1px solid #000;
-      padding: 5px 10px; } }
+    max-width: 40%; } }
 /*--------------------------------------------------------------
 ## Mobile Menu Type
 --------------------------------------------------------------*/
