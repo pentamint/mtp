@@ -1,0 +1,45 @@
+// Home - Investigation Process Row - 4 Li Columns
+
+.home-investigation-post {
+    .container { // ul
+        .row {
+            li {
+                a {
+                    .inner-wrapper-top {
+                        border: 1px solid #e9e9e9;
+                        padding: 1rem 0;
+                        .dispute-content {
+                            font-size: .75rem;
+                            text-align: center;
+                            height: 3.5rem;
+                            /* line-height: 1.5; */
+                            overflow: hidden;
+                        }
+                    }
+                    .inner-wrapper-bottom {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        text-align: center;
+                        border: 1px solid #e9e9e9;
+                        border-top: none;
+                        background-color: #fafafa;
+                        .dmg-amt {
+                            width: 100%;
+                        }
+                        .dmg-type {
+                            width: 100%;
+                        }
+                        .dmg-icon {
+                            max-width: 1rem;
+                            position: absolute;
+                            right: 2rem;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Default //

@@ -45,7 +45,7 @@
 	<div class="container">
 		<div class="top-info-wrapper row">
 			<div class="footer-logo col-md-3">
-				<img src="https://www.staging1.mt-police.com/wp-content/uploads/2017/10/logo.png" data-src="https://www.staging1.mt-police.com/wp-content/uploads/2017/10/logo.png" alt="먹튀폴리스 로고" class="footer-logo ls-is-cached lazyloaded">
+				<img src="/wp-content/uploads/2017/10/logo.png" data-src="/wp-content/uploads/2017/10/logo.png" alt="먹튀폴리스 로고" class="footer-logo ls-is-cached lazyloaded">
 			</div>
 			<div class="footer-company-info col-md-9">
 				<p>South Korea, Seoul, Gangnam-gu, Irwon 1(il)-dong  |  사업자정보 : (주)먹튀폴리스 사업자번호 : 847-12-00924</p>
@@ -91,7 +91,7 @@
 			<div class="col-md-12">
 				<footer id="colophon" class="site-footer" role="contentinfo">
 					<div class="site-info">
-						© Since 2012 | <a href="https://www.staging1.mt-police.com/" title="먹튀폴리스 HOME 으로">먹튀폴리스</a> All Rights Reserved
+						© Since 2012 | <a href="/" title="먹튀폴리스 HOME 으로">먹튀폴리스</a> All Rights Reserved
 					</div><!-- .site-info -->
 				</footer><!-- #colophon -->
 			</div><!-- .col-md-12 -->
@@ -99,6 +99,15 @@
 	</div><!-- .container -->
 </div><!-- .colophon-wrapper -->
 </div><!-- #page -->
+
+<div class="wise-chat-mobile-wrapper">
+	<div class="wise-chat-room">
+		<?php echo do_shortcode( '[wise-chat channel="먹폴 라이브 채팅방"]' ); ?>
+	</div>
+	<button type="button" class="btn btn-secondary wise-chat-caller">
+		<span class="chat-open-text">먹폴 채팅방</span>
+	</button>
+</div>
 
 <?php wp_footer(); ?>
 

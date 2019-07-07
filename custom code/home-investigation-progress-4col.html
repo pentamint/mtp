@@ -1,0 +1,35 @@
+<div class="home-investigation-post">
+    <ul id="investigation-list" class="container">
+        <div class="row">
+            [loop type=post category=먹튀제보검증 count=4]
+                <li class="col-12 col-md-6 col-lg-3">
+                    [link]
+                        <div class="inner-wrapper-top">
+                            <div class="resolution-status-img">
+                                [if field=investigation_progress value=해결완료]
+                                <img src="/wp-content/uploads/2019/07/크몽-gif-파일-1.png" alt="먹튀폴리스 아이콘">
+                                [else]
+                                <img src="/wp-content/uploads/2019/07/크몽-gif-파일-2.png" alt="먹튀폴리스 아이콘">
+                                [/if]
+                            </div>
+                            <div class="dispute-content">
+                                [content]
+                            </div>
+                        </div>
+                        <div class="inner-wrapper-bottom">
+                            <div class="dmg-amt">
+                                <span class="amt-txt">[field key=field_5d1a409715c1a] 만원</span>
+                            </div>
+                            <div class="dmg-type">
+                                [field key=field_5d1a416b0902c]
+                            </div>
+                            <div class="dmg-icon">
+                                <img src="/wp-content/uploads/2019/06/info.png" alt="먹튀폴리스 아이콘">
+                            </div>
+                        </div>
+                    [/link]
+                </li>
+            [/loop]
+        </div>
+    </ul>
+</div>

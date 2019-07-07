@@ -71,6 +71,12 @@
     };
   });
 
+  // // ----- Mobile Chat Button ----- //
+
+  $('.wise-chat-caller').click(function() {
+    $('.wise-chat-room').toggleClass('show');
+  });
+
   // ----- Bootstrap Support ----- //
 
   // --- Default Init --- //
@@ -120,5 +126,36 @@
       $('.boxed .ugb-container__content-wrapper').attr('style','margin-right: auto; margin-left: auto');
     }
   });
+
+/* ---------------------------------------------------------------------------
+ * 커스텀 fix ( 지우지 마세요 )
+** --------------------------------------------------------------------------- */
+$(document).ready(function() {
+  // 먹폴 픽방 탭    
+  if( $('.category-166').length > 0 ) {
+    var current_path = decodeURI(window.location.pathname);
+
+    var $tabs = $('.tab-btn-wrap > .tab-btn');
+
+    if( current_path.indexOf('축구') > -1 ) {
+        $tabs.eq(1).addClass('active');
+    }
+    else if( current_path.indexOf('야구') > -1 ) {
+        $tabs.eq(2).addClass('active');
+    }
+    else if( current_path.indexOf('농구') > -1 ) {
+        $tabs.eq(3).addClass('active');
+    }
+    else if( current_path.indexOf('배구') > -1 ) {
+        $tabs.eq(4).addClass('active');
+    }
+    else if( current_path.indexOf('하키') > -1 ) {
+        $tabs.eq(5).addClass('active');
+    }
+    else {
+        $tabs.eq(0).addClass('active');
+    }
+  }
+});
 
 } )( jQuery );

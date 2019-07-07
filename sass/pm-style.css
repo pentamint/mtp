@@ -10603,3 +10603,29 @@ object {
 
 #kboard-default-latest table td {
   padding: 0.625rem 0 0.625rem 0.75rem !important; }
+
+.wise-chat-mobile-wrapper {
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  width: 100%; }
+  .wise-chat-mobile-wrapper .wise-chat-room {
+    display: none; }
+    .wise-chat-mobile-wrapper .wise-chat-room.show {
+      display: block; }
+  .wise-chat-mobile-wrapper button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0f182b;
+    border-radius: 0;
+    border-top: 1px solid #333; }
+
+@media (max-width: 767.98px) {
+  body {
+    padding-bottom: 44px; }
+
+  #wisechatwidget-3 {
+    display: none; } }
+@media (min-width: 768px) {
+  .wise-chat-mobile-wrapper {
+    display: none; } }

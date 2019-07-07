@@ -1,0 +1,32 @@
+.wise-chat-mobile-wrapper {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    .wise-chat-room {
+        display: none;
+        &.show {
+            display: block;
+        }
+    }
+    button {
+        width: 100%;
+        padding: 10px 0;
+        background-color: #0f182b;
+        border-radius: 0;
+        border-top: 1px solid #333;
+    }
+}
+@include media-breakpoint-down(sm) {
+    body {
+        padding-bottom: 44px;
+    }
+    #wisechatwidget-3 {
+        display: none;
+    }
+}
+@include media-breakpoint-up(md) {
+    .wise-chat-mobile-wrapper {
+        display: none;
+    }
+}
